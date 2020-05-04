@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../ultra96v2_0.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" \
+
+nosort

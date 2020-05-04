@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec 19 14:54:58 2019
+# Process ID: 19949
+# Current directory: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/ultra96v2_oob_auto_pc_1_synth_1
+# Command line: vivado -log ultra96v2_oob_auto_pc_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_oob_auto_pc_1.tcl
+# Log file: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/ultra96v2_oob_auto_pc_1_synth_1/ultra96v2_oob_auto_pc_1.vds
+# Journal file: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/ultra96v2_oob_auto_pc_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ultra96v2_oob_auto_pc_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/training/git/avnet/hdl/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1434.434 ; gain = 0.000 ; free physical = 4402 ; free virtual = 18735
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ultra96v2_oob_auto_pc_1, cache-ID = 7396fcfd54bcda8f.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 19 14:55:26 2019...

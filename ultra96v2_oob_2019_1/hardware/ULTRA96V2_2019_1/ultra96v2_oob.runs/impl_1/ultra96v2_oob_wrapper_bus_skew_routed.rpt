@@ -1,0 +1,16 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date              : Fri Dec 20 10:23:12 2019
+| Host              : ubuv1604 running 64-bit Ubuntu 16.04.6 LTS
+| Command           : report_bus_skew -warn_on_violation -file ultra96v2_oob_wrapper_bus_skew_routed.rpt -pb ultra96v2_oob_wrapper_bus_skew_routed.pb -rpx ultra96v2_oob_wrapper_bus_skew_routed.rpx
+| Design            : ultra96v2_oob_wrapper
+| Device            : xczu3eg-sbva484
+| Speed File        : -1  PRODUCTION 1.25 05-09-2019
+| Temperature Grade : E
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

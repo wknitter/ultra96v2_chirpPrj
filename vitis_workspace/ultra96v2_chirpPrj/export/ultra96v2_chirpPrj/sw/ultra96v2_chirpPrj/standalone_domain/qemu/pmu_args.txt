@@ -1,0 +1,8 @@
+-M
+microblaze-fdt
+-device
+loader,file=<ultra96v2_chirpPrj/standalone_domain/qemu/pmufw.elf>
+-machine-path
+.
+-display
+none

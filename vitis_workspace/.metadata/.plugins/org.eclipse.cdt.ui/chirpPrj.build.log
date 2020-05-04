@@ -1,0 +1,26 @@
+15:47:10 **** Incremental Build of configuration Debug for project chirpPrj ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: chirpPrj.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/standalone_domain/bsplib/lib -o "chirpPrj.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: chirpPrj.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size chirpPrj.elf  |tee "chirpPrj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30308	   2048	  20616	  52972	   ceec	chirpPrj.elf
+Finished building: chirpPrj.elf.size
+ 
+
+15:47:10 Build Finished (took 180ms)
+

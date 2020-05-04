@@ -1,0 +1,35 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri Jun 15 03:51:14 2018
+| Host         : xcosswbld05 running 64-bit Red Hat Enterprise Linux Workstation release 7.2 (Maipo)
+| Command      : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+| Design       : design_1_wrapper
+| Device       : xczu3eg-sbva484-1-i
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 0
++------+----------+-------------+------------+
+| Rule | Severity | Description | Violations |
++------+----------+-------------+------------+
++------+----------+-------------+------------+
+
+2. REPORT DETAILS
+-----------------
+

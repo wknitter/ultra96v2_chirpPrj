@@ -1,0 +1,35 @@
+timestamp=[2020-02-07 16:43:09], mode=WORKBENCH_START, duration=0:00:02.466, duration_ms=2466, data={}
+timestamp=[2020-02-07 16:43:13], mode=WORKBENCH_UI_INIT, duration=0:00:03.224, duration_ms=3224, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2020-02-07 17:15:49], mode=PLATFORM_CREATION, duration=0:00:09.843, duration_ms=9843, data={platform_source=dsa, os=standalone, processor=psu_cortexa53, platform=null}
+timestamp=[2020-02-07 17:17:31], mode=PLATFORM_GENERATION, duration=0:00:46.750, duration_ms=46750, data={name=ultra96v2_0}
+timestamp=[2020-02-07 17:22:20], mode=APP_CREATION, duration=0:00:01.533, duration_ms=1533, data={name=hello_ultra96v2, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=ultra96v2_0, application_type=application}
+timestamp=[2020-02-17 10:41:04], mode=WORKBENCH_START, duration=0:00:06.755, duration_ms=6755, data={}
+timestamp=[2020-02-17 10:41:05], mode=WORKBENCH_UI_INIT, duration=0:00:00.833, duration_ms=833, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,hello_ultra96v2,ultra96v2_0,ultra96v2_system}
+timestamp=[2020-05-04 11:36:21], mode=WORKBENCH_START, duration=0:00:07.549, duration_ms=7549, data={}
+timestamp=[2020-05-04 11:36:22], mode=WORKBENCH_UI_INIT, duration=0:00:00.958, duration_ms=958, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,hello_ultra96v2,ultra96v2_0,ultra96v2_system}
+timestamp=[2020-05-04 11:39:35], mode=PLATFORM_CREATION, duration=0:00:08.280, duration_ms=8280, data={platform_source=dsa, os=standalone, processor=psu_cortexa53, platform=null}
+timestamp=[2020-05-04 11:40:19], mode=PLATFORM_GENERATION, duration=0:00:18.270, duration_ms=18270, data={name=ultra96v2_0}
+timestamp=[2020-05-04 11:41:11], mode=PLATFORM_GENERATION, duration=0:00:46.800, duration_ms=46800, data={name=ultra96v2_chirpPrj}
+timestamp=[2020-05-04 11:45:52], mode=APP_CREATION, duration=0:00:01.371, duration_ms=1371, data={name=chirpPrj, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=ultra96v2_chirpPrj, application_type=application}
+timestamp=[2020-05-04 12:53:50], mode=PLATFORM_GENERATION, duration=0:00:24.332, duration_ms=24332, data={name=ultra96v2_chirpPrj}
+timestamp=[2020-05-04 13:26:34], mode=WORKBENCH_START, duration=0:00:07.152, duration_ms=7152, data={}
+timestamp=[2020-05-04 13:26:35], mode=WORKBENCH_UI_INIT, duration=0:00:01.089, duration_ms=1089, data={editors_count=2, platform_editors_count=1, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,chirpPrj,chirpPrj_system,hello_ultra96v2,ultra96v2_0,ultra96v2_chirpPrj,ultra96v2_system}
+timestamp=[2020-05-04 13:37:10], mode=PLATFORM_GENERATION, duration=0:00:05.135, duration_ms=5135, data={name=ultra96v2_chirpPrj}
+timestamp=[2020-05-04 13:37:47], mode=WORKBENCH_START, duration=0:00:07.394, duration_ms=7394, data={}
+timestamp=[2020-05-04 13:37:48], mode=WORKBENCH_UI_INIT, duration=0:00:00.936, duration_ms=936, data={editors_count=2, platform_editors_count=1, projects_count=7, platform_projects_count=2, active_platform_editor=true, projects=RemoteSystemsTempFiles,chirpPrj,chirpPrj_system,hello_ultra96v2,ultra96v2_0,ultra96v2_chirpPrj,ultra96v2_system}
+timestamp=[2020-05-04 13:39:23], mode=PLATFORM_GENERATION, duration=0:00:24.147, duration_ms=24147, data={name=ultra96v2_0}
+timestamp=[2020-05-04 13:40:17], mode=PLATFORM_GENERATION, duration=0:00:48.720, duration_ms=48720, data={name=ultra96v2_chirpPrj}
+timestamp=[2020-05-04 14:26:26], mode=WORKBENCH_START, duration=0:00:07.256, duration_ms=7256, data={}
+timestamp=[2020-05-04 14:26:27], mode=WORKBENCH_UI_INIT, duration=0:00:01.026, duration_ms=1026, data={editors_count=2, platform_editors_count=1, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,chirpPrj,chirpPrj_system,hello_ultra96v2,ultra96v2_0,ultra96v2_chirpPrj,ultra96v2_system}
+timestamp=[2020-05-04 14:31:37], mode=PLATFORM_GENERATION, duration=0:00:04.678, duration_ms=4678, data={name=ultra96v2_chirpPrj}
+timestamp=[2020-05-04 14:54:42], mode=WORKBENCH_START, duration=0:00:07.307, duration_ms=7307, data={}
+timestamp=[2020-05-04 14:54:43], mode=WORKBENCH_UI_INIT, duration=0:00:00.947, duration_ms=947, data={editors_count=2, platform_editors_count=1, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,chirpPrj,chirpPrj_system,hello_ultra96v2,ultra96v2_0,ultra96v2_chirpPrj,ultra96v2_system}
+timestamp=[2020-05-04 15:23:13], mode=WORKBENCH_START, duration=0:00:07.553, duration_ms=7553, data={}
+timestamp=[2020-05-04 15:23:14], mode=WORKBENCH_UI_INIT, duration=0:00:00.863, duration_ms=863, data={editors_count=2, platform_editors_count=1, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,chirpPrj,chirpPrj_system,hello_ultra96v2,ultra96v2_0,ultra96v2_chirpPrj,ultra96v2_system}
+timestamp=[2020-05-04 15:38:07], mode=WORKBENCH_START, duration=0:00:07.160, duration_ms=7160, data={}
+timestamp=[2020-05-04 15:38:08], mode=WORKBENCH_UI_INIT, duration=0:00:00.941, duration_ms=941, data={editors_count=2, platform_editors_count=1, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,chirpPrj,chirpPrj_system,hello_ultra96v2,ultra96v2_0,ultra96v2_chirpPrj,ultra96v2_system}
+timestamp=[2020-05-04 15:41:15], mode=PLATFORM_GENERATION, duration=0:00:04.640, duration_ms=4640, data={name=ultra96v2_chirpPrj}
+timestamp=[2020-05-04 15:43:25], mode=PLATFORM_GENERATION, duration=0:00:05.116, duration_ms=5116, data={name=ultra96v2_chirpPrj}
+timestamp=[2020-05-04 15:43:49], mode=WORKBENCH_START, duration=0:00:07.692, duration_ms=7692, data={}
+timestamp=[2020-05-04 15:43:50], mode=WORKBENCH_UI_INIT, duration=0:00:01.111, duration_ms=1111, data={editors_count=2, platform_editors_count=1, projects_count=7, platform_projects_count=2, active_platform_editor=true, projects=RemoteSystemsTempFiles,chirpPrj,chirpPrj_system,hello_ultra96v2,ultra96v2_0,ultra96v2_chirpPrj,ultra96v2_system}
+timestamp=[2020-05-04 15:47:03], mode=PLATFORM_GENERATION, duration=0:00:49.756, duration_ms=49756, data={name=ultra96v2_chirpPrj}

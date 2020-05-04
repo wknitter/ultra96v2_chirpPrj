@@ -1,0 +1,342 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec 19 15:00:13 2019
+# Process ID: 20985
+# Current directory: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/ultra96v2_oob_PWM_w_Int_1_0_synth_1
+# Command line: vivado -log ultra96v2_oob_PWM_w_Int_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_oob_PWM_w_Int_1_0.tcl
+# Log file: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/ultra96v2_oob_PWM_w_Int_1_0_synth_1/ultra96v2_oob_PWM_w_Int_1_0.vds
+# Journal file: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/ultra96v2_oob_PWM_w_Int_1_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ultra96v2_oob_PWM_w_Int_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/training/git/avnet/hdl/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1388.910 ; gain = 0.000 ; free physical = 6915 ; free virtual = 21286
+Command: synth_design -top ultra96v2_oob_PWM_w_Int_1_0 -part xczu3eg-sbva484-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21208 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2172.938 ; gain = 0.000 ; free physical = 6709 ; free virtual = 21080
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_PWM_w_Int_1_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_PWM_w_Int_1_0/synth/ultra96v2_oob_PWM_w_Int_1_0.vhd:86]
+	Parameter PWM_PERIOD bound to: 20 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'PWM_w_Int' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/vhdl/PWM_w_Int.vhd:5' bound to instance 'U0' of component 'PWM_w_Int' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_PWM_w_Int_1_0/synth/ultra96v2_oob_PWM_w_Int_1_0.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'PWM_w_Int' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/vhdl/PWM_w_Int.vhd:52]
+	Parameter PWM_PERIOD bound to: 20 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'PWM_w_Int_S00_AXI' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/vhdl/PWM_w_Int_S00_AXI.vhd:5' bound to instance 'PWM_w_Int_S00_AXI_inst' of component 'PWM_w_Int_S00_AXI' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/vhdl/PWM_w_Int.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'PWM_w_Int_S00_AXI' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/vhdl/PWM_w_Int_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/vhdl/PWM_w_Int_S00_AXI.vhd:218]
+INFO: [Synth 8-226] default block is never used [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/vhdl/PWM_w_Int_S00_AXI.vhd:348]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/vhdl/PWM_w_Int_S00_AXI.vhd:216]
+INFO: [Synth 8-256] done synthesizing module 'PWM_w_Int_S00_AXI' (1#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/vhdl/PWM_w_Int_S00_AXI.vhd:86]
+	Parameter period bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'PWM_Controller_Int' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/verilog/PWM_Controller_Int.v:25' bound to instance 'PWM_Controller_Int_Inst' of component 'PWM_Controller_Int' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/vhdl/PWM_w_Int.vhd:139]
+INFO: [Synth 8-6157] synthesizing module 'PWM_Controller_Int' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/verilog/PWM_Controller_Int.v:25]
+	Parameter period bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PWM_Controller_Int' (2#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/verilog/PWM_Controller_Int.v:25]
+INFO: [Synth 8-256] done synthesizing module 'PWM_w_Int' (3#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/d813/hdl/vhdl/PWM_w_Int.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_PWM_w_Int_1_0' (4#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_PWM_w_Int_1_0/synth/ultra96v2_oob_PWM_w_Int_1_0.vhd:86]
+WARNING: [Synth 8-3331] design PWM_w_Int_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design PWM_w_Int_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design PWM_w_Int_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design PWM_w_Int_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design PWM_w_Int_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design PWM_w_Int_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2172.938 ; gain = 0.000 ; free physical = 6700 ; free virtual = 21071
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2172.938 ; gain = 0.000 ; free physical = 6682 ; free virtual = 21053
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2172.938 ; gain = 0.000 ; free physical = 6682 ; free virtual = 21053
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2271.957 ; gain = 0.000 ; free physical = 5993 ; free virtual = 20364
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2295.770 ; gain = 23.812 ; free physical = 5974 ; free virtual = 20345
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 2295.770 ; gain = 122.832 ; free physical = 5668 ; free virtual = 20039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 2295.770 ; gain = 122.832 ; free physical = 5667 ; free virtual = 20039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 2295.770 ; gain = 122.832 ; free physical = 5666 ; free virtual = 20038
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 2295.770 ; gain = 122.832 ; free physical = 5630 ; free virtual = 20002
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PWM_w_Int_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+Module PWM_Controller_Int 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design ultra96v2_oob_PWM_w_Int_1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design ultra96v2_oob_PWM_w_Int_1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design ultra96v2_oob_PWM_w_Int_1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design ultra96v2_oob_PWM_w_Int_1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design ultra96v2_oob_PWM_w_Int_1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design ultra96v2_oob_PWM_w_Int_1_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'U0/PWM_w_Int_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/PWM_w_Int_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/PWM_w_Int_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/PWM_w_Int_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/PWM_w_Int_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/PWM_w_Int_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 2295.770 ; gain = 122.832 ; free physical = 5534 ; free virtual = 19908
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:02:43 . Memory (MB): peak = 2707.223 ; gain = 534.285 ; free physical = 3304 ; free virtual = 17689
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:02:43 . Memory (MB): peak = 2707.223 ; gain = 534.285 ; free physical = 3303 ; free virtual = 17688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:02:43 . Memory (MB): peak = 2718.246 ; gain = 545.309 ; free physical = 3298 ; free virtual = 17683
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:02:45 . Memory (MB): peak = 2733.121 ; gain = 560.184 ; free physical = 3288 ; free virtual = 17672
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:02:45 . Memory (MB): peak = 2733.121 ; gain = 560.184 ; free physical = 3288 ; free virtual = 17672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:02:45 . Memory (MB): peak = 2733.121 ; gain = 560.184 ; free physical = 3287 ; free virtual = 17672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:02:45 . Memory (MB): peak = 2733.121 ; gain = 560.184 ; free physical = 3287 ; free virtual = 17672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:02:45 . Memory (MB): peak = 2733.121 ; gain = 560.184 ; free physical = 3287 ; free virtual = 17672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:02:45 . Memory (MB): peak = 2733.121 ; gain = 560.184 ; free physical = 3287 ; free virtual = 17672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |     5|
+|2     |LUT1   |     2|
+|3     |LUT2   |    16|
+|4     |LUT3   |     4|
+|5     |LUT4   |    40|
+|6     |LUT6   |    37|
+|7     |FDRE   |   189|
+|8     |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------------+-------------------+------+
+|      |Instance                    |Module             |Cells |
++------+----------------------------+-------------------+------+
+|1     |top                         |                   |   295|
+|2     |  U0                        |PWM_w_Int          |   295|
+|3     |    PWM_Controller_Int_Inst |PWM_Controller_Int |    35|
+|4     |    PWM_w_Int_S00_AXI_inst  |PWM_w_Int_S00_AXI  |   260|
++------+----------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:02:45 . Memory (MB): peak = 2733.121 ; gain = 560.184 ; free physical = 3287 ; free virtual = 17672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:02:32 . Memory (MB): peak = 2733.121 ; gain = 437.352 ; free physical = 3334 ; free virtual = 17719
+Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:02:45 . Memory (MB): peak = 2733.129 ; gain = 560.184 ; free physical = 3334 ; free virtual = 17719
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2773.879 ; gain = 0.000 ; free physical = 3251 ; free virtual = 17636
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:03:30 . Memory (MB): peak = 2773.879 ; gain = 1384.969 ; free physical = 3347 ; free virtual = 17732
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2773.879 ; gain = 0.000 ; free physical = 3347 ; free virtual = 17732
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/ultra96v2_oob_PWM_w_Int_1_0_synth_1/ultra96v2_oob_PWM_w_Int_1_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ultra96v2_oob_PWM_w_Int_1_0, cache-ID = dc0e7de3231ed433
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2797.891 ; gain = 0.000 ; free physical = 3332 ; free virtual = 17717
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/ultra96v2_oob_PWM_w_Int_1_0_synth_1/ultra96v2_oob_PWM_w_Int_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ultra96v2_oob_PWM_w_Int_1_0_utilization_synth.rpt -pb ultra96v2_oob_PWM_w_Int_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 19 15:04:13 2019...

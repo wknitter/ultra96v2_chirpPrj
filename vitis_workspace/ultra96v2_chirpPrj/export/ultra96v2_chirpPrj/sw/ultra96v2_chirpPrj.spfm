@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="ultra96v2_chirpPrj"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+ultra96v2_chirpPrj
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="ultra96v2_chirpPrj">
+        <sdx:configuration sdx:name="ultra96v2_chirpPrj"
+                           sdx:displayName="ultra96v2_chirpPrj"
+                           sdx:defaultProcessorGroup="standalone_domain"
+                           sdx:runtimes="cpp">
+            <sdx:description>ultra96v2_chirpPrj</sdx:description>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="ultra96v2_chirpPrj/boot/ultra96v2_chirpPrj.bif"
+                            sdx:readme="ultra96v2_chirpPrj/boot/generic.readme"
+                            sdx:qemuArguments="ultra96v2_chirpPrj/qemu/pmu_args.txt:ultra96v2_chirpPrj/qemu/qemu_args.txt"
+                            />
+                <sdx:image sdx:name="standalone_domain"
+                            sdx:bif="ultra96v2_chirpPrj/boot/ultra96v2_chirpPrj.bif"
+                            sdx:readme="ultra96v2_chirpPrj/boot/generic.readme"
+                            sdx:qemuArguments="ultra96v2_chirpPrj/standalone_domain/qemu/pmu_args.txt:ultra96v2_chirpPrj/standalone_domain/qemu/qemu_args.txt"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="standalone_domain"
+                                sdx:displayName="standalone on psu_cortexa53_0"
+                                sdx:cpuType="cortex-a53"
+                                sdx:cpuInstance="psu_cortexa53_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="ultra96v2_chirpPrj/standalone_domain/bsplib/lib"
+                        sdx:bspIncludePaths="ultra96v2_chirpPrj/standalone_domain/bspinclude/include"
+                        sdx:bspConfig="ultra96v2_chirpPrj/standalone_domain/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>

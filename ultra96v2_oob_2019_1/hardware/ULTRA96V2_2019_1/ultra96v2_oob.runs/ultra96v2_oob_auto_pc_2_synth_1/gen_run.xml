@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="ultra96v2_oob_auto_pc_2_synth_1" LaunchPart="xczu3eg-sbva484-1-e" LaunchTime="1576784754">
+  <File Type="RDS-UTIL-PB" Name="ultra96v2_oob_auto_pc_2_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="ultra96v2_oob_auto_pc_2_utilization_synth.rpt"/>
+  <File Type="RDS-RDS" Name="ultra96v2_oob_auto_pc_2.vds"/>
+  <File Type="RDS-DCP" Name="ultra96v2_oob_auto_pc_2.dcp"/>
+  <File Type="PA-TCL" Name="ultra96v2_oob_auto_pc_2.tcl"/>
+  <File Type="REPORTS-TCL" Name="ultra96v2_oob_auto_pc_2_reports.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ultra96v2_oob_auto_pc_2">
+    <File Path="$PSRCDIR/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_2/ultra96v2_oob_auto_pc_2.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ultra96v2_oob_auto_pc_2"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ultra96v2_oob_auto_pc_2">
+    <File Path="$PSRCDIR/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_2/ultra96v2_oob_auto_pc_2.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ultra96v2_oob_auto_pc_2"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

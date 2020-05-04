@@ -1,0 +1,807 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jun 15 03:45:15 2018
+# Process ID: 56253
+# Current directory: /tmp/tmp.ANmr8KR1eR/temp/project_1.runs/design_1_axi_uart16550_0_0_synth_1
+# Command line: vivado -log design_1_axi_uart16550_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_uart16550_0_0.tcl
+# Log file: /tmp/tmp.ANmr8KR1eR/temp/project_1.runs/design_1_axi_uart16550_0_0_synth_1/design_1_axi_uart16550_0_0.vds
+# Journal file: /tmp/tmp.ANmr8KR1eR/temp/project_1.runs/design_1_axi_uart16550_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_axi_uart16550_0_0.tcl -notrace
+Command: synth_design -top design_1_axi_uart16550_0_0 -part xczu3eg-sbva484-1-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 56535 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1791.312 ; gain = 0.000 ; free physical = 18851 ; free virtual = 274550
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uart16550_0_0' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/synth/design_1_axi_uart16550_0_0.vhd:99]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 99999900 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_IS_A_16550 bound to: 1 - type: integer 
+	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: integer 
+	Parameter C_HAS_EXTERNAL_RCLK bound to: 0 - type: integer 
+	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
+INFO: [Synth 8-3491] module 'axi_uart16550' declared at '/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4601' bound to instance 'U0' of component 'axi_uart16550' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/synth/design_1_axi_uart16550_0_0.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'axi_uart16550' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4680]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 99999900 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_IS_A_16550 bound to: 1 - type: integer 
+	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: integer 
+	Parameter C_HAS_EXTERNAL_RCLK bound to: 0 - type: integer 
+	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4620]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4621]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000000011111 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 13 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 31 - type: integer 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 31 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (1#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+WARNING: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
+WARNING: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (2#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (3#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'xuart' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4204]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_S_AXI_CLK_FREQ_HZ bound to: 99999900 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_IS_A_16550 bound to: 1 - type: bool 
+	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: bool 
+	Parameter C_HAS_EXTERNAL_RCLK bound to: 0 - type: bool 
+	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart16550' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2317]
+	Parameter C_IS_A_16550 bound to: 1 - type: bool 
+	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: bool 
+	Parameter C_S_AXI_CLK_FREQ_HZ bound to: 99999900 - type: integer 
+	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'xuart_tx_load_sm' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
+INFO: [Synth 8-226] default block is never used [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-256] done synthesizing module 'xuart_tx_load_sm' (4#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'BAUD_FF' to cell 'ODDRE1' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3383]
+INFO: [Synth 8-638] synthesizing module 'rx16550' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
+INFO: [Synth 8-226] default block is never used [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1760]
+INFO: [Synth 8-4471] merging register 'Character_received_reg' into 'Data_ready_reg' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1688]
+WARNING: [Synth 8-6014] Unused sequential element Character_received_reg was removed.  [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1688]
+INFO: [Synth 8-256] done synthesizing module 'rx16550' (5#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
+INFO: [Synth 8-638] synthesizing module 'tx16550' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
+INFO: [Synth 8-256] done synthesizing module 'tx16550' (6#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
+INFO: [Synth 8-638] synthesizing module 'tx_fifo_block' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 5 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (7#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (8#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (9#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'tx_fifo_block' (10#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
+INFO: [Synth 8-638] synthesizing module 'rx_fifo_block' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'rx_fifo_control' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-226] default block is never used [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'rx_fifo_control' (11#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 11 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_DWIDTH bound to: 11 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (11#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (11#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'rx_fifo_block' (12#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
+INFO: [Synth 8-256] done synthesizing module 'uart16550' (13#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2317]
+INFO: [Synth 8-638] synthesizing module 'ipic_if' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3880]
+INFO: [Synth 8-256] done synthesizing module 'ipic_if' (14#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3880]
+INFO: [Synth 8-256] done synthesizing module 'xuart' (15#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4204]
+INFO: [Synth 8-256] done synthesizing module 'axi_uart16550' (16#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4680]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_uart16550_0_0' (17#1) [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/synth/design_1_axi_uart16550_0_0.vhd:99]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[5]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[4]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[3]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[2]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[1]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[0]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[7]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[6]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[5]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[4]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[3]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[2]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[1]
+WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Rx_fifo_data_in[0]
+WARNING: [Synth 8-3331] design tx16550 has unconnected port Lcr[7]
+WARNING: [Synth 8-3331] design rx16550 has unconnected port Lcr[7]
+WARNING: [Synth 8-3331] design rx16550 has unconnected port Lcr[6]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[31]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[30]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[29]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[28]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[27]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[26]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[25]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[24]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[23]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[22]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[21]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[20]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[19]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[18]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[17]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[16]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[15]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[14]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[13]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[12]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[11]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[10]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[9]
+WARNING: [Synth 8-3331] design xuart has unconnected port Bus2IP_Data[8]
+WARNING: [Synth 8-3331] design xuart has unconnected port Rclk
+WARNING: [Synth 8-3331] design xuart has unconnected port Xin
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Address_In_Erly[0]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Address_In_Erly[1]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Address_In_Erly[2]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Address_In_Erly[3]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Address_In_Erly[4]
+WARNING: [Synth 8-3331] design address_decoder has unconnected port Bus_RNW
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_AWADDR[12]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_AWADDR[11]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_AWADDR[10]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_AWADDR[9]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_AWADDR[8]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_AWADDR[7]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_AWADDR[6]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_AWADDR[5]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_ARADDR[12]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_ARADDR[11]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_ARADDR[10]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_ARADDR[9]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_ARADDR[8]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_ARADDR[7]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_ARADDR[6]
+WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_ARADDR[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1791.812 ; gain = 0.500 ; free physical = 18706 ; free virtual = 274491
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1791.812 ; gain = 0.500 ; free physical = 18648 ; free virtual = 274449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1791.812 ; gain = 0.500 ; free physical = 18648 ; free virtual = 274449
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0_board.xdc] for cell 'U0'
+Parsing XDC File [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.xdc] for cell 'U0'
+Parsing XDC File [/tmp/tmp.ANmr8KR1eR/temp/project_1.runs/design_1_axi_uart16550_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/tmp/tmp.ANmr8KR1eR/temp/project_1.runs/design_1_axi_uart16550_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  ODDRE1 => OSERDESE3: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2423.227 ; gain = 0.496 ; free physical = 14780 ; free virtual = 272004
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 2423.227 ; gain = 631.914 ; free physical = 14798 ; free virtual = 272131
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 2423.227 ; gain = 631.914 ; free physical = 14798 ; free virtual = 272131
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /tmp/tmp.ANmr8KR1eR/temp/project_1.runs/design_1_axi_uart16550_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 2423.227 ; gain = 631.914 ; free physical = 14795 ; free virtual = 272129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xuart_tx_load_sm'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'receive_state_reg' in module 'rx16550'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'transmit_state_reg' in module 'tx16550'
+INFO: [Synth 8-5544] ROM "tsr_loaded_com" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fifo_full_p1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_full_p1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3729]
+INFO: [Synth 8-5544] ROM "iir" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                             0010 |                               00
+                 sm_read |                             1000 |                               01
+                sm_write |                             0100 |                               10
+                 sm_resp |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             empty_empty |                               00 |                               00
+              empty_full |                               01 |                               01
+              full_empty |                               10 |                               10
+               full_full |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'xuart_tx_load_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0101 |                             0000
+               start_bit |                             0100 |                             0001
+               data_bit1 |                             0110 |                             0010
+               data_bit2 |                             0000 |                             0011
+               data_bit3 |                             0001 |                             0100
+               data_bit4 |                             0010 |                             0101
+               data_bit5 |                             1101 |                             0110
+               data_bit6 |                             1010 |                             0111
+               data_bit7 |                             1011 |                             1000
+               data_bit8 |                             1100 |                             1001
+              parity_bit |                             1001 |                             1010
+             frame_error |                             0011 |                             1101
+               stop_bit1 |                             1000 |                             1011
+               stop_bit2 |                             0111 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'receive_state_reg' using encoding 'sequential' in module 'rx16550'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+               start_bit |                             0001 |                             0001
+               data_bit1 |                             0010 |                             0010
+               data_bit2 |                             0011 |                             0011
+               data_bit3 |                             0100 |                             0100
+               data_bit4 |                             0101 |                             0101
+               data_bit5 |                             0110 |                             0110
+               data_bit6 |                             0111 |                             0111
+               data_bit7 |                             1000 |                             1000
+               data_bit8 |                             1001 |                             1001
+              parity_bit |                             1010 |                             1010
+               stop_bit1 |                             1011 |                             1011
+               stop_bit2 |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'transmit_state_reg' using encoding 'sequential' in module 'tx16550'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 2423.227 ; gain = 631.914 ; free physical = 14675 ; free virtual = 272044
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 15    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 122   
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 13    
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 36    
+	  14 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	  13 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 52    
+	   4 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module slave_attachment 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module xuart_tx_load_sm 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module rx16550 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 34    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 17    
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	  14 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 1     
+Module tx16550 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 5     
+	  13 Input      1 Bit        Muxes := 4     
+Module cntr_incr_decr_addn_f 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+Module srl_fifo_rbu_f 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module rx_fifo_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module srl_fifo_rbu_f__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module uart16550 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 50    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 12    
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+Module ipic_if 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 11    
+Module axi_uart16550 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'XUART_I_1/UART16550_I_1/wrN_d_reg' into 'XUART_I_1/UART16550_I_1/rdN_d_reg' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2594]
+INFO: [Synth 8-4471] merging register 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' into 'bus2ip_reset_int_core_reg' [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2493]
+WARNING: [Synth 8-6014] Unused sequential element AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].cs_out_i_reg was removed.  [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2004]
+WARNING: [Synth 8-6014] Unused sequential element AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg was removed.  [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2493]
+WARNING: [Synth 8-6014] Unused sequential element XUART_I_1/UART16550_I_1/wrN_d_reg was removed.  [/tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ipshared/e469/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2594]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_awaddr[12]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_awaddr[11]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_awaddr[10]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_awaddr[9]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_awaddr[8]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_awaddr[7]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_awaddr[6]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_awaddr[5]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[31]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[30]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[29]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[28]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[27]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[26]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[25]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[24]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[23]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[22]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[21]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[20]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[19]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[18]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[17]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[16]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[15]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[14]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[13]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[12]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[11]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[10]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[9]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_wdata[8]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_araddr[12]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_araddr[11]
+WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_araddr[10]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/XUART_I_1/UART16550_I_1/iir_reg[4]' (FDR) to 'U0/XUART_I_1/UART16550_I_1/iir_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/XUART_I_1/UART16550_I_1/GENERATING_FIFOS.fcr_reg[4]' (FDR) to 'U0/XUART_I_1/UART16550_I_1/iir_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/XUART_I_1/UART16550_I_1/iir_reg[5]' (FDR) to 'U0/XUART_I_1/UART16550_I_1/GENERATING_FIFOS.fcr_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\XUART_I_1/UART16550_I_1/GENERATING_FIFOS.fcr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'U0/XUART_I_1/UART16550_I_1/mcr_reg[5]' (FDRE) to 'U0/XUART_I_1/UART16550_I_1/mcr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/XUART_I_1/UART16550_I_1/iir_reg[6]' (FD) to 'U0/XUART_I_1/UART16550_I_1/iir_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/XUART_I_1/UART16550_I_1/mcr_reg[6]' (FDRE) to 'U0/XUART_I_1/UART16550_I_1/mcr_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\XUART_I_1/UART16550_I_1/mcr_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\XUART_I_1/UART16550_I_1/rdN_d_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/mcr_reg[7]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/GENERATING_FIFOS.tx_fifo_block_1/srl_fifo_rbu_f_i1/underflow_i_reg) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/GENERATING_FIFOS.tx_fifo_block_1/srl_fifo_rbu_f_i1/overflow_i_reg) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/GENERATING_FIFOS.rx_fifo_block_1/srl_fifo_rbu_f_i1/underflow_i_reg) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/GENERATING_FIFOS.rx_fifo_block_1/srl_fifo_rbu_f_i1/overflow_i_reg) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (XUART_I_1/UART16550_I_1/rdN_d_reg) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[1]) is unused and will be removed from module axi_uart16550.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[0]) is unused and will be removed from module axi_uart16550.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 2423.227 ; gain = 631.914 ; free physical = 14604 ; free virtual = 272108
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:29 . Memory (MB): peak = 2643.062 ; gain = 851.750 ; free physical = 11382 ; free virtual = 270763
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:30 . Memory (MB): peak = 2686.602 ; gain = 895.289 ; free physical = 10228 ; free virtual = 269639
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/XUART_I_1/UART16550_I_1/tx16550_1/Tsr_loaded_reg' (FDR) to 'U0/XUART_I_1/UART16550_I_1/tx16550_1/Tx_fifo_rd_en_reg'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:01:31 . Memory (MB): peak = 2686.602 ; gain = 895.289 ; free physical = 10207 ; free virtual = 269625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:01:31 . Memory (MB): peak = 2686.605 ; gain = 895.293 ; free physical = 10132 ; free virtual = 269558
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:01:31 . Memory (MB): peak = 2686.605 ; gain = 895.293 ; free physical = 10131 ; free virtual = 269557
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:01:31 . Memory (MB): peak = 2686.605 ; gain = 895.293 ; free physical = 10121 ; free virtual = 269548
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:01:31 . Memory (MB): peak = 2686.605 ; gain = 895.293 ; free physical = 10121 ; free virtual = 269548
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:01:31 . Memory (MB): peak = 2686.605 ; gain = 895.293 ; free physical = 10121 ; free virtual = 269547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:01:31 . Memory (MB): peak = 2686.605 ; gain = 895.293 ; free physical = 10120 ; free virtual = 269546
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                  | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | INFERRED_GEN.data_reg[15] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | INFERRED_GEN.data_reg[15] | 11     | 11         | 11     | 0       | 0      | 0      | 0      | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |     4|
+|2     |LUT2   |    43|
+|3     |LUT3   |    46|
+|4     |LUT4   |    61|
+|5     |LUT5   |    68|
+|6     |LUT6   |   157|
+|7     |ODDRE1 |     1|
+|8     |SRL16E |    19|
+|9     |FDRE   |   258|
+|10    |FDSE   |    50|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------+-------------------------------+------+
+|      |Instance                                   |Module                         |Cells |
++------+-------------------------------------------+-------------------------------+------+
+|1     |top                                        |                               |   707|
+|2     |  U0                                       |axi_uart16550                  |   707|
+|3     |    AXI_LITE_IPIF_I                        |axi_lite_ipif                  |    38|
+|4     |      I_SLAVE_ATTACHMENT                   |slave_attachment               |    38|
+|5     |        I_DECODER                          |address_decoder                |     7|
+|6     |    XUART_I_1                              |xuart                          |   667|
+|7     |      IPIC_IF_I_1                          |ipic_if                        |    14|
+|8     |      UART16550_I_1                        |uart16550                      |   653|
+|9     |        \GENERATING_FIFOS.rx_fifo_block_1  |rx_fifo_block                  |    86|
+|10    |          rx_fifo_control_1                |rx_fifo_control                |    37|
+|11    |          srl_fifo_rbu_f_i1                |srl_fifo_rbu_f__parameterized0 |    49|
+|12    |            CNTR_INCR_DECR_ADDN_F_I        |cntr_incr_decr_addn_f_0        |    24|
+|13    |            DYNSHREG_F_I                   |dynshreg_f__parameterized0     |    22|
+|14    |        \GENERATING_FIFOS.tx_fifo_block_1  |tx_fifo_block                  |    25|
+|15    |          srl_fifo_rbu_f_i1                |srl_fifo_rbu_f                 |    25|
+|16    |            CNTR_INCR_DECR_ADDN_F_I        |cntr_incr_decr_addn_f          |    14|
+|17    |            DYNSHREG_F_I                   |dynshreg_f                     |     9|
+|18    |        rx16550_1                          |rx16550                        |   169|
+|19    |        tx16550_1                          |tx16550                        |    63|
+|20    |        xuart_tx_load_sm_1                 |xuart_tx_load_sm               |    29|
++------+-------------------------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:01:31 . Memory (MB): peak = 2686.605 ; gain = 895.293 ; free physical = 10118 ; free virtual = 269545
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 45 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:01:04 . Memory (MB): peak = 2686.605 ; gain = 263.879 ; free physical = 10150 ; free virtual = 269577
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:01:31 . Memory (MB): peak = 2686.609 ; gain = 895.293 ; free physical = 10150 ; free virtual = 269577
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  ODDRE1 => OSERDESE3: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+123 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:01:32 . Memory (MB): peak = 2719.621 ; gain = 928.809 ; free physical = 10107 ; free virtual = 269560
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/tmp/tmp.ANmr8KR1eR/temp/project_1.runs/design_1_axi_uart16550_0_0_synth_1/design_1_axi_uart16550_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /tmp/tmp.ANmr8KR1eR/temp/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uart16550_0_0/design_1_axi_uart16550_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 19 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/tmp/tmp.ANmr8KR1eR/temp/project_1.runs/design_1_axi_uart16550_0_0_synth_1/design_1_axi_uart16550_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_uart16550_0_0_utilization_synth.rpt -pb design_1_axi_uart16550_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2743.637 ; gain = 0.000 ; free physical = 10025 ; free virtual = 269513
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 15 03:47:09 2018...

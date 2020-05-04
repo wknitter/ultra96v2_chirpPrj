@@ -1,0 +1,499 @@
+16:43:11 INFO  : Launching XSCT server: xsct -n  -interactive /home/parallels/ultra96v2_0/vitis_workspace/temp_xsdb_launch_script.tcl
+16:43:13 INFO  : XSCT server has started successfully.
+16:43:13 INFO  : Successfully done setting XSCT server connection channel  
+16:43:13 INFO  : plnx-install-location is set to ''
+16:43:13 INFO  : Successfully done query RDI_DATADIR 
+16:43:13 INFO  : Successfully done setting workspace for the tool. 
+16:43:14 INFO  : Registering command handlers for Vitis TCF services
+17:15:57 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+17:15:58 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss"
+17:15:58 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/psu_cortexa53_0/standalone_domain/bsp/system.mss"
+17:22:54 INFO  : Checking for BSP changes to sync application flags for project 'hello_ultra96v2'...
+10:41:03 INFO  : Launching XSCT server: xsct -n  -interactive /home/parallels/ultra96v2_0/vitis_workspace/temp_xsdb_launch_script.tcl
+10:41:04 INFO  : Registering command handlers for Vitis TCF services
+10:41:05 INFO  : XSCT server has started successfully.
+10:41:05 INFO  : Successfully done setting XSCT server connection channel  
+10:41:05 INFO  : plnx-install-location is set to ''
+10:41:05 INFO  : Successfully done setting workspace for the tool. 
+10:41:05 INFO  : Successfully done query RDI_DATADIR 
+11:36:20 INFO  : Launching XSCT server: xsct -n  -interactive /home/parallels/ultra96v2_0/vitis_workspace/temp_xsdb_launch_script.tcl
+11:36:21 INFO  : Registering command handlers for Vitis TCF services
+11:36:22 INFO  : XSCT server has started successfully.
+11:36:22 INFO  : Successfully done setting XSCT server connection channel  
+11:36:22 INFO  : plnx-install-location is set to ''
+11:36:22 INFO  : Successfully done setting workspace for the tool. 
+11:36:22 INFO  : Successfully done query RDI_DATADIR 
+11:36:51 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+11:36:52 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss"
+11:36:52 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/psu_cortexa53_0/standalone_domain/bsp/system.mss"
+11:39:43 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+11:39:43 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss"
+11:39:43 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/psu_cortexa53_0/standalone_domain/bsp/system.mss"
+11:40:19 INFO  : Checking for BSP changes to sync application flags for project 'hello_ultra96v2'...
+11:46:50 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+11:46:51 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss"
+11:46:51 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/psu_cortexa53_0/standalone_domain/bsp/system.mss"
+12:53:05 INFO  : (SwPlaform) Successfully done setParamInSpec 
+12:53:09 INFO  : (SwPlaform) Successfully done setParamInSpec 
+12:53:10 INFO  : (SwPlatform) Successfully done update_mss 
+12:53:11 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+12:53:25 INFO  : Checking for BSP changes to sync application flags for project 'hello_ultra96v2'...
+12:53:50 INFO  : Checking for BSP changes to sync application flags for project 'chirpPrj'...
+12:54:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:54:50 INFO  : Processor 'psu_cortexa53_0' will be used for running fsbl '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf'
+12:54:50 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+12:54:50 INFO  : 'jtag frequency' command is executed.
+12:54:50 INFO  : Sourcing of '/tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+12:54:50 INFO  : Context for 'APU' is selected.
+12:54:51 INFO  : System reset is completed.
+12:54:54 INFO  : 'after 3000' command is executed.
+12:54:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+12:54:57 INFO  : FPGA configured successfully with bitstream "/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit"
+12:54:57 INFO  : Context for 'APU' is selected.
+12:54:58 INFO  : Hardware design information is loaded from '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa'.
+12:54:58 INFO  : 'configparams force-mem-access 1' command is executed.
+12:54:58 INFO  : Context for 'APU' is selected.
+12:54:58 INFO  : Boot mode is read from the target.
+12:54:58 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:54:58 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:54:59 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:54:59 INFO  : 'set bp_54_59_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+12:55:00 INFO  : 'con -block -timeout 60' command is executed.
+12:55:00 INFO  : 'bpremove $bp_54_59_fsbl_bp' command is executed.
+12:55:00 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:55:00 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:55:00 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:55:00 INFO  : 'configparams force-mem-access 0' command is executed.
+12:55:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf
+set bp_54_59_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_54_59_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:55:00 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:55:00 INFO  : 'con' command is executed.
+12:55:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+12:55:00 INFO  : Launch script is exported to file '/home/parallels/ultra96v2_0/vitis_workspace/.sdk/launch_scripts/single_application_debug/debugger_chirpprj-default.tcl'
+13:24:05 INFO  : Disconnected from the channel tcfchan#7.
+13:26:33 INFO  : Launching XSCT server: xsct -n  -interactive /home/parallels/ultra96v2_0/vitis_workspace/temp_xsdb_launch_script.tcl
+13:26:35 INFO  : XSCT server has started successfully.
+13:26:35 INFO  : Successfully done setting XSCT server connection channel  
+13:26:35 INFO  : Successfully done setting workspace for the tool. 
+13:26:35 INFO  : plnx-install-location is set to ''
+13:26:35 INFO  : Successfully done query RDI_DATADIR 
+13:26:36 INFO  : Registering command handlers for Vitis TCF services
+13:30:46 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+13:30:46 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss"
+13:30:46 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/psu_cortexa53_0/standalone_domain/bsp/system.mss"
+13:35:54 INFO  : Hardware specification for platform project 'ultra96v2_chirpPrj' is updated.
+13:36:07 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+13:36:07 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss"
+13:36:08 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/psu_cortexa53_0/standalone_domain/bsp/system.mss"
+13:37:46 INFO  : Launching XSCT server: xsct -n  -interactive /home/parallels/ultra96v2_0/vitis_workspace/temp_xsdb_launch_script.tcl
+13:37:48 INFO  : XSCT server has started successfully.
+13:37:48 INFO  : plnx-install-location is set to ''
+13:37:48 INFO  : Successfully done setting XSCT server connection channel  
+13:37:48 INFO  : Registering command handlers for Vitis TCF services
+13:37:56 INFO  : Successfully done setting workspace for the tool. 
+13:37:56 INFO  : Successfully done query RDI_DATADIR 
+13:37:57 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+13:37:57 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss"
+13:37:57 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/psu_cortexa53_0/standalone_domain/bsp/system.mss"
+13:39:23 INFO  : Checking for BSP changes to sync application flags for project 'hello_ultra96v2'...
+13:40:17 INFO  : Checking for BSP changes to sync application flags for project 'chirpPrj'...
+13:40:24 INFO  : The hardware specfication used by project 'chirpPrj' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+13:40:24 INFO  : The file '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit' stored in project is removed.
+13:40:24 INFO  : The updated bitstream files are copied from platform to folder '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream' in project 'chirpPrj'.
+13:40:24 INFO  : The file '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/psinit/psu_init.tcl' stored in project is removed.
+13:40:25 INFO  : The updated ps init files are copied from platform to folder '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/psinit' in project 'chirpPrj'.
+13:41:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:41:25 INFO  : Processor 'psu_cortexa53_0' will be used for running fsbl '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf'
+13:41:25 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+13:41:25 INFO  : 'jtag frequency' command is executed.
+13:41:25 INFO  : Sourcing of '/tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+13:41:25 INFO  : Context for 'APU' is selected.
+13:41:26 INFO  : System reset is completed.
+13:41:29 INFO  : 'after 3000' command is executed.
+13:41:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+13:41:32 INFO  : FPGA configured successfully with bitstream "/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit"
+13:41:32 INFO  : Context for 'APU' is selected.
+13:41:33 INFO  : Hardware design information is loaded from '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa'.
+13:41:33 INFO  : 'configparams force-mem-access 1' command is executed.
+13:41:33 INFO  : Context for 'APU' is selected.
+13:41:33 INFO  : Boot mode is read from the target.
+13:41:33 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:41:33 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+13:41:34 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+13:41:34 INFO  : 'set bp_41_34_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+13:41:34 INFO  : 'con -block -timeout 60' command is executed.
+13:41:34 INFO  : 'bpremove $bp_41_34_fsbl_bp' command is executed.
+13:41:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:41:34 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+13:41:34 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf' is downloaded to processor 'psu_cortexa53_0'.
+13:41:34 INFO  : 'configparams force-mem-access 0' command is executed.
+13:41:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf
+set bp_41_34_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_41_34_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:41:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:41:34 INFO  : 'con' command is executed.
+13:41:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+13:41:34 INFO  : Launch script is exported to file '/home/parallels/ultra96v2_0/vitis_workspace/.sdk/launch_scripts/single_application_debug/systemdebugger_chirpprj_system_standalone.tcl'
+14:24:59 INFO  : Disconnected from the channel tcfchan#5.
+14:26:25 INFO  : Launching XSCT server: xsct -n  -interactive /home/parallels/ultra96v2_0/vitis_workspace/temp_xsdb_launch_script.tcl
+14:26:27 INFO  : XSCT server has started successfully.
+14:26:27 INFO  : Successfully done setting XSCT server connection channel  
+14:26:27 INFO  : plnx-install-location is set to ''
+14:26:27 INFO  : Successfully done setting workspace for the tool. 
+14:26:27 INFO  : Successfully done query RDI_DATADIR 
+14:26:27 INFO  : Registering command handlers for Vitis TCF services
+14:27:04 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+14:27:05 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss"
+14:27:05 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/psu_cortexa53_0/standalone_domain/bsp/system.mss"
+14:31:27 INFO  : Checking for BSP changes to sync application flags for project 'hello_ultra96v2'...
+14:31:37 INFO  : Checking for BSP changes to sync application flags for project 'chirpPrj'...
+14:32:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:32:09 INFO  : Processor 'psu_cortexa53_0' will be used for running fsbl '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf'
+14:32:09 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+14:32:10 INFO  : 'jtag frequency' command is executed.
+14:32:10 INFO  : Sourcing of '/tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+14:32:10 INFO  : Context for 'APU' is selected.
+14:32:10 INFO  : System reset is completed.
+14:32:13 INFO  : 'after 3000' command is executed.
+14:32:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+14:32:17 INFO  : FPGA configured successfully with bitstream "/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit"
+14:32:17 INFO  : Context for 'APU' is selected.
+14:32:17 INFO  : Hardware design information is loaded from '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa'.
+14:32:17 INFO  : 'configparams force-mem-access 1' command is executed.
+14:32:17 INFO  : Context for 'APU' is selected.
+14:32:17 INFO  : Boot mode is read from the target.
+14:32:17 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:32:17 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:32:18 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:32:18 INFO  : 'set bp_32_18_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+14:32:18 INFO  : 'con -block -timeout 60' command is executed.
+14:32:18 INFO  : 'bpremove $bp_32_18_fsbl_bp' command is executed.
+14:32:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:32:18 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:32:19 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:32:19 INFO  : 'configparams force-mem-access 0' command is executed.
+14:32:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf
+set bp_32_18_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_32_18_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:32:19 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:32:19 INFO  : 'con' command is executed.
+14:32:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+14:32:19 INFO  : Launch script is exported to file '/home/parallels/ultra96v2_0/vitis_workspace/.sdk/launch_scripts/single_application_debug/debugger_chirpprj-default.tcl'
+14:42:20 INFO  : Disconnected from the channel tcfchan#4.
+14:54:41 INFO  : Launching XSCT server: xsct -n  -interactive /home/parallels/ultra96v2_0/vitis_workspace/temp_xsdb_launch_script.tcl
+14:54:43 INFO  : XSCT server has started successfully.
+14:54:43 INFO  : plnx-install-location is set to ''
+14:54:43 INFO  : Successfully done setting XSCT server connection channel  
+14:54:43 INFO  : Successfully done setting workspace for the tool. 
+14:54:43 INFO  : Successfully done query RDI_DATADIR 
+14:54:43 INFO  : Registering command handlers for Vitis TCF services
+14:55:51 INFO  : Checking for BSP changes to sync application flags for project 'hello_ultra96v2'...
+14:55:56 INFO  : Checking for BSP changes to sync application flags for project 'chirpPrj'...
+14:56:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa is already opened
+
+14:56:11 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/export/ultra96v2_0/hw/ultra96v2_0_wrapper.xsa is already opened
+
+14:56:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:56:28 INFO  : Processor 'psu_cortexa53_0' will be used for running fsbl '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf'
+14:56:28 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+14:56:28 INFO  : 'jtag frequency' command is executed.
+14:56:28 INFO  : Sourcing of '/tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+14:56:28 INFO  : Context for 'APU' is selected.
+14:56:29 INFO  : System reset is completed.
+14:56:32 INFO  : 'after 3000' command is executed.
+14:56:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+14:56:35 INFO  : FPGA configured successfully with bitstream "/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit"
+14:56:35 INFO  : Context for 'APU' is selected.
+14:56:36 INFO  : Hardware design information is loaded from '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa'.
+14:56:36 INFO  : 'configparams force-mem-access 1' command is executed.
+14:56:36 INFO  : Context for 'APU' is selected.
+14:56:36 INFO  : Boot mode is read from the target.
+14:56:36 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:56:36 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:56:36 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:56:36 INFO  : 'set bp_56_36_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+14:56:38 INFO  : 'con -block -timeout 60' command is executed.
+14:56:38 INFO  : 'bpremove $bp_56_36_fsbl_bp' command is executed.
+14:56:38 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:56:38 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:56:38 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:56:38 INFO  : 'configparams force-mem-access 0' command is executed.
+14:56:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf
+set bp_56_36_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_56_36_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:56:38 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:56:38 INFO  : 'con' command is executed.
+14:56:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+14:56:38 INFO  : Launch script is exported to file '/home/parallels/ultra96v2_0/vitis_workspace/.sdk/launch_scripts/single_application_debug/debugger_chirpprj-default.tcl'
+15:11:20 INFO  : Disconnected from the channel tcfchan#3.
+15:23:12 INFO  : Launching XSCT server: xsct -n  -interactive /home/parallels/ultra96v2_0/vitis_workspace/temp_xsdb_launch_script.tcl
+15:23:14 INFO  : Registering command handlers for Vitis TCF services
+15:23:15 INFO  : XSCT server has started successfully.
+15:23:15 INFO  : Successfully done setting XSCT server connection channel  
+15:23:15 INFO  : plnx-install-location is set to ''
+15:23:15 INFO  : Successfully done setting workspace for the tool. 
+15:23:15 INFO  : Successfully done query RDI_DATADIR 
+15:23:50 INFO  : Checking for BSP changes to sync application flags for project 'hello_ultra96v2'...
+15:23:56 INFO  : Checking for BSP changes to sync application flags for project 'chirpPrj'...
+15:24:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa is already opened
+
+15:24:11 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/export/ultra96v2_0/hw/ultra96v2_0_wrapper.xsa is already opened
+
+15:24:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:24:58 INFO  : Processor 'psu_cortexa53_0' will be used for running fsbl '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf'
+15:24:58 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+15:24:58 INFO  : 'jtag frequency' command is executed.
+15:24:58 INFO  : Sourcing of '/tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+15:24:58 INFO  : Context for 'APU' is selected.
+15:24:59 INFO  : System reset is completed.
+15:25:02 INFO  : 'after 3000' command is executed.
+15:25:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+15:25:05 INFO  : FPGA configured successfully with bitstream "/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit"
+15:25:05 INFO  : Context for 'APU' is selected.
+15:25:05 INFO  : Hardware design information is loaded from '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa'.
+15:25:05 INFO  : 'configparams force-mem-access 1' command is executed.
+15:25:05 INFO  : Context for 'APU' is selected.
+15:25:05 INFO  : Boot mode is read from the target.
+15:25:05 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:25:05 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:25:06 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:25:06 INFO  : 'set bp_25_6_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+15:25:07 INFO  : 'con -block -timeout 60' command is executed.
+15:25:07 INFO  : 'bpremove $bp_25_6_fsbl_bp' command is executed.
+15:25:07 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:25:07 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:25:08 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:25:08 INFO  : 'configparams force-mem-access 0' command is executed.
+15:25:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf
+set bp_25_6_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_25_6_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:25:08 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:25:08 INFO  : 'con' command is executed.
+15:25:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+15:25:08 INFO  : Launch script is exported to file '/home/parallels/ultra96v2_0/vitis_workspace/.sdk/launch_scripts/single_application_debug/debugger_chirpprj-default.tcl'
+15:28:25 INFO  : Disconnected from the channel tcfchan#3.
+15:38:06 INFO  : Launching XSCT server: xsct -n  -interactive /home/parallels/ultra96v2_0/vitis_workspace/temp_xsdb_launch_script.tcl
+15:38:08 INFO  : XSCT server has started successfully.
+15:38:08 INFO  : plnx-install-location is set to ''
+15:38:08 INFO  : Successfully done setting XSCT server connection channel  
+15:38:08 INFO  : Successfully done setting workspace for the tool. 
+15:38:08 INFO  : Successfully done query RDI_DATADIR 
+15:38:08 INFO  : Registering command handlers for Vitis TCF services
+15:38:24 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+15:38:24 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss"
+15:38:25 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/psu_cortexa53_0/standalone_domain/bsp/system.mss"
+15:41:05 INFO  : Checking for BSP changes to sync application flags for project 'hello_ultra96v2'...
+15:41:15 INFO  : Checking for BSP changes to sync application flags for project 'chirpPrj'...
+15:42:15 INFO  : Hardware specification for platform project 'ultra96v2_chirpPrj' is updated.
+15:42:28 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+15:42:28 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss"
+15:42:29 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/psu_cortexa53_0/standalone_domain/bsp/system.mss"
+15:43:48 INFO  : Launching XSCT server: xsct -n  -interactive /home/parallels/ultra96v2_0/vitis_workspace/temp_xsdb_launch_script.tcl
+15:43:50 INFO  : XSCT server has started successfully.
+15:43:50 INFO  : plnx-install-location is set to ''
+15:43:50 INFO  : Registering command handlers for Vitis TCF services
+15:43:56 INFO  : Successfully done setting XSCT server connection channel  
+15:43:58 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa is already opened
+
+15:43:58 INFO  : Successfully done setting workspace for the tool. 
+15:43:58 INFO  : Successfully done query RDI_DATADIR 
+15:43:59 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss"
+15:43:59 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss"
+15:44:00 INFO  : Successfully done sdx_reload_mss "/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/psu_cortexa53_0/standalone_domain/bsp/system.mss"
+15:46:08 INFO  : Checking for BSP changes to sync application flags for project 'hello_ultra96v2'...
+15:47:03 INFO  : Checking for BSP changes to sync application flags for project 'chirpPrj'...
+15:47:10 INFO  : The hardware specfication used by project 'chirpPrj' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+15:47:10 INFO  : The file '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit' stored in project is removed.
+15:47:10 INFO  : The updated bitstream files are copied from platform to folder '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream' in project 'chirpPrj'.
+15:47:10 INFO  : The file '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/psinit/psu_init.tcl' stored in project is removed.
+15:47:11 INFO  : The updated ps init files are copied from platform to folder '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/psinit' in project 'chirpPrj'.
+15:52:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:52:06 INFO  : Processor 'psu_cortexa53_0' will be used for running fsbl '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf'
+15:52:06 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+15:52:06 INFO  : 'jtag frequency' command is executed.
+15:52:06 INFO  : Sourcing of '/tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+15:52:06 INFO  : Context for 'APU' is selected.
+15:52:07 INFO  : System reset is completed.
+15:52:10 INFO  : 'after 3000' command is executed.
+15:52:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+15:52:13 INFO  : FPGA configured successfully with bitstream "/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit"
+15:52:13 INFO  : Context for 'APU' is selected.
+15:52:13 INFO  : Hardware design information is loaded from '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa'.
+15:52:13 INFO  : 'configparams force-mem-access 1' command is executed.
+15:52:13 INFO  : Context for 'APU' is selected.
+15:52:13 INFO  : Boot mode is read from the target.
+15:52:13 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:52:13 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:52:14 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:52:14 INFO  : 'set bp_52_14_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+15:52:15 INFO  : 'con -block -timeout 60' command is executed.
+15:52:15 INFO  : 'bpremove $bp_52_14_fsbl_bp' command is executed.
+15:52:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:52:16 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:52:16 INFO  : The application '/home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:52:16 INFO  : 'configparams force-mem-access 0' command is executed.
+15:52:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/hw/ultra96v2_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/sw/ultra96v2_chirpPrj/boot/fsbl.elf
+set bp_52_14_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_52_14_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:52:16 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:52:16 INFO  : 'con' command is executed.
+15:52:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+15:52:16 INFO  : Launch script is exported to file '/home/parallels/ultra96v2_0/vitis_workspace/.sdk/launch_scripts/single_application_debug/debugger_chirpprj-default.tcl'
+15:57:41 INFO  : Disconnected from the channel tcfchan#4.

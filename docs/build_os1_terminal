@@ -1,0 +1,892 @@
+parallels@parallels-Parallels-Virtual-Platform:~$ cd ./ultra96v2_0/
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0$ ls
+docs            ultra96v2_0.cache          ultra96v2_0_wrapper.xsa
+psu_init.c      ultra96v2_0.hw             ultra96v2_0.xpr
+psu_init_gpl.c  ultra96v2_0.ip_user_files  ultra96v2_oob_2019_1
+psu_init_gpl.h  ultra96v2_0.runs           ultra96v2_os0
+psu_init.h      ultra96v2_0.sim            vitis_workspace
+psu_init.html   ultra96v2_0.srcs           xilinx-ultra96-reva-2018.2
+psu_init.tcl    ultra96v2_0_wrapper.bit
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0$ source /tools/Xilinx/PetaLinux/2019.2/settings.sh
+PetaLinux environment set to '/tools/Xilinx/PetaLinux/2019.2'
+INFO: Checking free disk space
+INFO: Checking installed tools
+INFO: Checking installed development libraries
+INFO: Checking network and other services
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0$ petalinux-create --type project --template zynqMP --name ultra96v2_os1
+INFO: Create project: ultra96v2_os1
+INFO: New project successfully created in /home/parallels/ultra96v2_0/ultra96v2_os1
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0$ cd ./ultra96v2_os1
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ ls
+config.project  project-spec
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-config --get-hw-description ../
+INFO: Getting hardware description...
+INFO: Rename ultra96v2_0_wrapper.xsa to system.xsa
+[INFO] generating Kconfig for project
+[INFO] menuconfig project
+configuration written to /home/parallels/ultra96v2_0/ultra96v2_os1/project-spec/configs/config
+
+*** End of the configuration.
+*** Execute 'make' to start the build or try 'make help'.
+
+[INFO] sourcing bitbake
+[INFO] generating plnxtool conf
+[INFO] generating meta-plnx-generated layer
+[INFO] generating user layers
+[INFO] generating workspace directory
+[INFO] generating machine configuration
+[INFO] generating bbappends for project . This may take time ! 
+[INFO] generating u-boot configuration files
+[INFO] generating kernel configuration files
+[INFO] generating kconfig for Rootfs
+[INFO] silentconfig rootfs
+[INFO] generating petalinux-user-image.bb
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3978 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2893 .bb files complete (2882 cached, 11 parsed). 3980 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:05
+Sstate summary: Wanted 920 Found 716 Missed 408 Current 0 (77% match, 0% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 3302 tasks of which 2375 didn't need to be rerun and all succeeded.
+INFO: Copying Images from deploy to images
+INFO: Creating /home/parallels/ultra96v2_0/ultra96v2_os1/images/linux directory
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-create -t apps --template c --name sds-lib --enable
+INFO: Create apps: sds-lib
+INFO: New apps successfully created in /home/parallels/ultra96v2_0/ultra96v2_os1/project-spec/meta-user/recipes-apps/sds-lib
+INFO: Enabling created component...
+INFO: sourcing bitbake
+INFO: silentconfig rootfs
+INFO: sds-lib has been enabled 
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-config -c rootfs
+[INFO] sourcing bitbake
+[INFO] generating plnxtool conf
+[INFO] generating meta-plnx-generated layer
+[INFO] generating user layers
+[INFO] generating workspace directory
+[INFO] generating machine configuration
+[INFO] configuring: rootfs
+[INFO] generating kconfig for Rootfs
+[INFO] menuconfig rootfs
+
+
+*** End of the configuration.
+*** Execute 'make' to start the build or try 'make help'.
+
+[INFO] generating petalinux-user-image.bb
+[INFO] successfully configured rootfs
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build -c sds-lib
+[INFO] building sds-lib
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake sds-lib
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3979 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2894 .bb files complete (2890 cached, 4 parsed). 3981 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:00
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:00
+Sstate summary: Wanted 14 Found 0 Missed 28 Current 116 (0% match, 89% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 557 tasks of which 541 didn't need to be rerun and all succeeded.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built sds-lib
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build -c rootfs
+[INFO] building rootfs
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image -c do_image_complete
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3980 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:03
+Parsing of 2894 .bb files complete (2892 cached, 2 parsed). 3981 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:01
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:02
+Sstate summary: Wanted 123 Found 20 Missed 206 Current 725 (16% match, 87% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 2546 tasks of which 2537 didn't need to be rerun and all succeeded.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built rootfs
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3980 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:03
+Parsing of 2894 .bb files complete (2892 cached, 2 parsed). 3981 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:01
+Sstate summary: Wanted 121 Found 20 Missed 202 Current 805 (16% match, 89% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 3318 tasks of which 3110 didn't need to be rerun and all succeeded.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-create -t modules --name led-brightness --enable
+INFO: Create modules: led-brightness
+INFO: New modules successfully created in /home/parallels/ultra96v2_0/ultra96v2_os1/project-spec/meta-user/recipes-modules/led-brightness
+INFO: Enabling created component...
+INFO: sourcing bitbake
+INFO: silentconfig rootfs
+INFO: led-brightness has been enabled 
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build -c kernel
+[INFO] building kernel
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake virtual/kernel
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3980 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:03
+Parsing of 2895 .bb files complete (2891 cached, 4 parsed). 3982 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:00
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:00
+Sstate summary: Wanted 10 Found 2 Missed 16 Current 148 (20% match, 94% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 710 tasks of which 710 didn't need to be rerun and all succeeded.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built kernel
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build -c led-brightness
+[INFO] building led-brightness
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake led-brightness
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3981 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:03
+Parsing of 2895 .bb files complete (2893 cached, 2 parsed). 3982 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:00
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:00
+Sstate summary: Wanted 22 Found 2 Missed 40 Current 150 (9% match, 88% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+ERROR: led-brightness-1.0-r0 do_compile: oe_runmake failed
+ERROR: led-brightness-1.0-r0 do_compile: Function failed: do_compile (log file is located at /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/temp/log.do_compile.28295)
+ERROR: Logfile of failure stored in: /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/temp/log.do_compile.28295
+Log data follows:
+| DEBUG: Executing shell function do_compile
+| NOTE: make -j 8 KERNEL_SRC=/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source KERNEL_PATH=/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source KERNEL_VERSION=4.19.0-xilinx-v2019.2 CC=aarch64-xilinx-linux-gcc   -fuse-ld=bfd -fdebug-prefix-map=/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0=/usr/src/debug/led-brightness/1.0-r0 -fdebug-prefix-map=/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/recipe-sysroot-native=  -fdebug-prefix-map=/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source=/usr/src/kernel LD=aarch64-xilinx-linux-ld.bfd   AR=aarch64-xilinx-linux-ar  O=/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-build-artifacts KBUILD_EXTRA_SYMBOLS=
+| make -C /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source M=/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0
+| make[1]: Entering directory '/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source'
+| make[2]: Entering directory '/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-build-artifacts'
+|   CC [M]  /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.o
+| In file included from /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/platform_device.h:14,
+|                  from /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:186:
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c: In function 'led_brightness_write':
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:305:6: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+|       (unsigned int) buffer);
+|       ^
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/device.h:1418:32: note: in definition of macro 'dev_err'
+|   _dev_err(dev, dev_fmt(fmt), ##__VA_ARGS__)
+|                                 ^~~~~~~~~~~
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:317:5: error: implicit declaration of function 'copy_from_user'; did you mean 'raw_copy_from_user'? [-Werror=implicit-function-declaration]
+|   if(copy_from_user(dev->brightness_buf, buffer, cnt)) {
+|      ^~~~~~~~~~~~~~
+|      raw_copy_from_user
+| In file included from /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/platform_device.h:14,
+|                  from /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:186:
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c: In function 'led_brightness_read':
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:357:26: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+|      "address: 0x%08X\n", (unsigned int)buffer);
+|                           ^
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/device.h:1418:32: note: in definition of macro 'dev_err'
+|   _dev_err(dev, dev_fmt(fmt), ##__VA_ARGS__)
+|                                 ^~~~~~~~~~~
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:366:11: error: implicit declaration of function 'copy_to_user'; did you mean 'raw_copy_to_user'? [-Werror=implicit-function-declaration]
+|   retval = copy_to_user((void *)buffer, dev->brightness_buf, cnt);
+|            ^~~~~~~~~~~~
+|            raw_copy_to_user
+| In file included from /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/printk.h:7,
+|                  from /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/kernel.h:14,
+|                  from /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:184:
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c: In function 'led_brightness_of_probe':
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/kern_levels.h:5:18: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'resource_size_t' {aka 'long long unsigned int'} [-Wformat=]
+|  #define KERN_SOH "\001"  /* ASCII Start Of Header */
+|                   ^~~~~~
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/kern_levels.h:14:19: note: in expansion of macro 'KERN_SOH'
+|  #define KERN_INFO KERN_SOH "6" /* informational */
+|                    ^~~~~~~~
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:478:9: note: in expansion of macro 'KERN_INFO'
+|   printk(KERN_INFO DRIVER_NAME " : Found device memory resource at %08X %08X.\n",
+|          ^~~~~~~~~
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:478:70: note: format string is defined here
+|   printk(KERN_INFO DRIVER_NAME " : Found device memory resource at %08X %08X.\n",
+|                                                                    ~~~^
+|                                                                    %08llX
+| In file included from /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/printk.h:7,
+|                  from /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/kernel.h:14,
+|                  from /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:184:
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/kern_levels.h:5:18: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'resource_size_t' {aka 'long long unsigned int'} [-Wformat=]
+|  #define KERN_SOH "\001"  /* ASCII Start Of Header */
+|                   ^~~~~~
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/include/linux/kern_levels.h:14:19: note: in expansion of macro 'KERN_SOH'
+|  #define KERN_INFO KERN_SOH "6" /* informational */
+|                    ^~~~~~~~
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:478:9: note: in expansion of macro 'KERN_INFO'
+|   printk(KERN_INFO DRIVER_NAME " : Found device memory resource at %08X %08X.\n",
+|          ^~~~~~~~~
+| /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.c:478:75: note: format string is defined here
+|   printk(KERN_INFO DRIVER_NAME " : Found device memory resource at %08X %08X.\n",
+|                                                                         ~~~^
+|                                                                         %08llX
+| cc1: some warnings being treated as errors
+| make[3]: *** [/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/scripts/Makefile.build:312: /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/led-brightness.o] Error 1
+| make[2]: *** [/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source/Makefile:1517: _module_/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0] Error 2
+| make[2]: Leaving directory '/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-build-artifacts'
+| make[1]: *** [Makefile:146: sub-make] Error 2
+| make[1]: Leaving directory '/home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work-shared/plnx-zynqmp/kernel-source'
+| make: *** [Makefile:6: all] Error 2
+| ERROR: oe_runmake failed
+| WARNING: /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/temp/run.do_compile.28295:1 exit 1 from 'exit 1'
+| ERROR: Function failed: do_compile (log file is located at /home/parallels/ultra96v2_0/ultra96v2_os1/build/tmp/work/plnx_zynqmp-xilinx-linux/led-brightness/1.0-r0/temp/log.do_compile.28295)
+ERROR: Task (/home/parallels/ultra96v2_0/ultra96v2_os1/project-spec/meta-user/recipes-modules/led-brightness/led-brightness.bb:do_compile) failed with exit code '1'
+NOTE: Tasks Summary: Attempted 731 tasks of which 713 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/parallels/ultra96v2_0/ultra96v2_os1/project-spec/meta-user/recipes-modules/led-brightness/led-brightness.bb:do_compile
+Summary: There were 2 ERROR messages shown, returning a non-zero exit code.
+ERROR: Failed to build led-brightness
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build -c led-brightness
+[INFO] building led-brightness
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake led-brightness
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3981 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2895 .bb files complete (2893 cached, 2 parsed). 3982 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:00
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:00
+Sstate summary: Wanted 18 Found 2 Missed 32 Current 154 (11% match, 90% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 743 tasks of which 724 didn't need to be rerun and all succeeded.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built led-brightness
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3981 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:03
+Parsing of 2895 .bb files complete (2893 cached, 2 parsed). 3982 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:02
+Sstate summary: Wanted 122 Found 19 Missed 206 Current 816 (15% match, 89% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 3350 tasks of which 3335 didn't need to be rerun and all succeeded.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-create -t modules --name wilc --enable
+INFO: Create modules: wilc
+INFO: New modules successfully created in /home/parallels/ultra96v2_0/ultra96v2_os1/project-spec/meta-user/recipes-modules/wilc
+INFO: Enabling created component...
+INFO: sourcing bitbake
+INFO: silentconfig rootfs
+INFO: wilc has been enabled 
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build -c kernel
+[INFO] building kernel
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake virtual/kernel
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3981 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:03
+Parsing of 2896 .bb files complete (2892 cached, 4 parsed). 3983 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:00
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:00
+Sstate summary: Wanted 10 Found 2 Missed 16 Current 148 (20% match, 94% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 710 tasks of which 710 didn't need to be rerun and all succeeded.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built kernel
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build -c wilc
+[INFO] building wilc
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake wilc
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3982 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:03
+Parsing of 2896 .bb files complete (2894 cached, 2 parsed). 3983 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:00
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:00
+Sstate summary: Wanted 17 Found 3 Missed 28 Current 165 (17% match, 92% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 760 tasks of which 738 didn't need to be rerun and all succeeded.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built wilc
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3982 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:03
+Parsing of 2896 .bb files complete (2894 cached, 2 parsed). 3983 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:02
+Sstate summary: Wanted 122 Found 19 Missed 206 Current 822 (15% match, 89% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 3366 tasks of which 3353 didn't need to be rerun and all succeeded.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-config -c kernel
+[INFO] generating Kconfig for project
+[INFO] sourcing bitbake
+[INFO] generating plnxtool conf
+[INFO] generating meta-plnx-generated layer
+[INFO] generating user layers
+[INFO] generating workspace directory
+[INFO] generating machine configuration
+[INFO] configuring: kernel
+[INFO] generating kernel configuration files
+[INFO] devtool modify linux-xlnx
+NOTE: Starting bitbake server...
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3982 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:03
+Parsing of 2896 .bb files complete (2894 cached, 2 parsed). 3983 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:00
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:00
+Sstate summary: Wanted 4 Found 0 Missed 8 Current 45 (0% match, 91% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 375 tasks of which 375 didn't need to be rerun and all succeeded.
+NOTE: Copying kernel config to workspace
+NOTE: Recipe linux-xlnx now set up to build from /home/parallels/ultra96v2_0/ultra96v2_os1/components/plnx_workspace/sources/linux-xlnx
+[INFO] devtool menuconfig -a linux-xlnx
+NOTE: Starting bitbake server...
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3982 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2896 .bb files complete (2893 cached, 3 parsed). 3983 targets, 155 skipped, 0 masked, 0 errors.
+Removing 1 recipes from the plnx_zynqmp sysroot: 100% |########################| Time: 0:00:00
+NOTE: Launching menuconfig
+Loading cache: 100% |##########################################################| Time: 0:00:02
+Loaded 3981 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2896 .bb files complete (2893 cached, 3 parsed). 3983 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:00
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:00
+Sstate summary: Wanted 4 Found 0 Missed 8 Current 45 (0% match, 91% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 373 tasks of which 366 didn't need to be rerun and all succeeded.
+NOTE: Updating config fragment /home/parallels/ultra96v2_0/ultra96v2_os1/components/plnx_workspace/sources/linux-xlnx/oe-local-files/devtool-fragment.cfg
+[INFO] successfully configured kernel
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3981 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2896 .bb files complete (2893 cached, 3 parsed). 3983 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+WARNING: /tools/Xilinx/PetaLinux/2019.2/components/yocto/source/aarch64/layers/meta-xilinx/meta-xilinx-bsp/recipes-kernel/linux/linux-xlnx_2019.2.bb.do_compile is tainted from a forced run
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:02
+Sstate summary: Wanted 150 Found 12 Missed 276 Current 786 (8% match, 85% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: linux-xlnx: compiling from external source tree /home/parallels/ultra96v2_0/ultra96v2_os1/components/plnx_workspace/sources/linux-xlnx
+NOTE: Tasks Summary: Attempted 3362 tasks of which 3227 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3981 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2896 .bb files complete (2892 cached, 4 parsed). 3983 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+WARNING: /tools/Xilinx/PetaLinux/2019.2/components/yocto/source/aarch64/layers/meta-xilinx/meta-xilinx-bsp/recipes-kernel/linux/linux-xlnx_2019.2.bb.do_compile is tainted from a forced run
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:02
+Sstate summary: Wanted 139 Found 18 Missed 242 Current 797 (12% match, 87% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 3362 tasks of which 3272 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3981 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2898 .bb files complete (2893 cached, 5 parsed). 3985 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+WARNING: /tools/Xilinx/PetaLinux/2019.2/components/yocto/source/aarch64/layers/meta-xilinx/meta-xilinx-bsp/recipes-kernel/linux/linux-xlnx_2019.2.bb.do_compile is tainted from a forced run
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:02
+Sstate summary: Wanted 123 Found 21 Missed 204 Current 813 (17% match, 89% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 3362 tasks of which 3354 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-config -c rootfs
+[INFO] sourcing bitbake
+[INFO] generating plnxtool conf
+[INFO] generating meta-plnx-generated layer
+[INFO] generating user layers
+[INFO] generating workspace directory
+[INFO] generating machine configuration
+[INFO] configuring: rootfs
+[INFO] generating kconfig for Rootfs
+[INFO] menuconfig rootfs
+
+
+*** End of the configuration.
+*** Execute 'make' to start the build or try 'make help'.
+
+[INFO] generating petalinux-user-image.bb
+[INFO] successfully configured rootfs
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3983 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2900 .bb files complete (2892 cached, 8 parsed). 3987 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+WARNING: /tools/Xilinx/PetaLinux/2019.2/components/yocto/source/aarch64/layers/meta-xilinx/meta-xilinx-bsp/recipes-kernel/linux/linux-xlnx_2019.2.bb.do_compile is tainted from a forced run
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:02
+Sstate summary: Wanted 120 Found 18 Missed 204 Current 816 (15% match, 89% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 3362 tasks of which 3354 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3985 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2900 .bb files complete (2896 cached, 4 parsed). 3987 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+WARNING: /tools/Xilinx/PetaLinux/2019.2/components/yocto/source/aarch64/layers/meta-xilinx/meta-xilinx-bsp/recipes-kernel/linux/linux-xlnx_2019.2.bb.do_compile is tainted from a forced run
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:02
+Sstate summary: Wanted 120 Found 18 Missed 204 Current 816 (15% match, 89% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 3362 tasks of which 3354 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-config -c rootfs
+[INFO] sourcing bitbake
+[INFO] generating plnxtool conf
+[INFO] generating meta-plnx-generated layer
+[INFO] generating user layers
+[INFO] generating workspace directory
+[INFO] generating machine configuration
+[INFO] configuring: rootfs
+[INFO] generating kconfig for Rootfs
+[INFO] menuconfig rootfs
+
+
+*** End of the configuration.
+*** Execute 'make' to start the build or try 'make help'.
+
+[INFO] generating petalinux-user-image.bb
+[INFO] successfully configured rootfs
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-config -c rootfs
+[INFO] sourcing bitbake
+[INFO] generating plnxtool conf
+[INFO] generating meta-plnx-generated layer
+[INFO] generating user layers
+[INFO] generating workspace directory
+[INFO] generating machine configuration
+[INFO] configuring: rootfs
+[INFO] generating kconfig for Rootfs
+[INFO] menuconfig rootfs
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:51:warning: multi-line strings not supported
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:52:warning: multi-line strings not supported
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:103:warning: multi-line strings not supported
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:104:warning: multi-line strings not supported
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:107:warning: multi-line strings not supported
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:108:warning: multi-line strings not supported
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:111:warning: multi-line strings not supported
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:112:warning: multi-line strings not supported
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:115:warning: multi-line strings not supported
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:116:warning: multi-line strings not supported
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:119:warning: multi-line strings not supported
+/home/parallels/ultra96v2_0/ultra96v2_os1/build/misc/rootfs_config/Kconfig.user:120:warning: multi-line strings not supported
+ERROR: Failed to menu config rootfs component 
+ERROR: Failed to config rootfs.
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-config -c rootfs
+[INFO] sourcing bitbake
+[INFO] generating plnxtool conf
+[INFO] generating meta-plnx-generated layer
+[INFO] generating user layers
+[INFO] generating workspace directory
+[INFO] generating machine configuration
+[INFO] configuring: rootfs
+[INFO] generating kconfig for Rootfs
+[INFO] menuconfig rootfs
+configuration written to /home/parallels/ultra96v2_0/ultra96v2_os1/project-spec/configs/rootfs_config
+
+*** End of the configuration.
+*** Execute 'make' to start the build or try 'make help'.
+
+[INFO] generating petalinux-user-image.bb
+[INFO] successfully configured rootfs
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3985 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2900 .bb files complete (2896 cached, 4 parsed). 3987 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+WARNING: /tools/Xilinx/PetaLinux/2019.2/components/yocto/source/aarch64/layers/meta-xilinx/meta-xilinx-bsp/recipes-kernel/linux/linux-xlnx_2019.2.bb.do_compile is tainted from a forced run
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:01
+Sstate summary: Wanted 120 Found 18 Missed 204 Current 816 (15% match, 89% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 3362 tasks of which 3354 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-config -c rootfs
+[INFO] sourcing bitbake
+[INFO] generating plnxtool conf
+[INFO] generating meta-plnx-generated layer
+[INFO] generating user layers
+[INFO] generating workspace directory
+[INFO] generating machine configuration
+[INFO] configuring: rootfs
+[INFO] generating kconfig for Rootfs
+[INFO] menuconfig rootfs
+configuration written to /home/parallels/ultra96v2_0/ultra96v2_os1/project-spec/configs/rootfs_config
+
+*** End of the configuration.
+*** Execute 'make' to start the build or try 'make help'.
+
+[INFO] generating petalinux-user-image.bb
+[INFO] successfully configured rootfs
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build - wpa-supplicant
+ERROR: Invalid options: - wpa-supplicant
+ERROR: /project-spec/configs/config is not found!
+Builds the project or the specified components.
+
+Usage:
+  petalinux-build [options]
+
+Required:
+
+Options:
+  -h, --help                         show function usage
+  -p, --project <PROJECT>            path to PetaLinux SDK project.
+                                     Default is working project.
+  -c, --component <COMPONENT>        Specify the component
+                                     it will build the specified component and its dependencies
+                                     E.g. -c rootfs
+                                     E.g. -c myapp
+  -x, --execute <tasks of bitbake>   Specify a bitbake task of the component
+				     To know the list tasks for a component:
+				     E.g. -x do_listtasks
+  -f, --force			     Force run a specific task ignoring the stamps
+				     Force run has to be for a component or its tasks
+				     E.g. -c myapp -f
+				     E.g. -c myapp -x compile -f
+  -v, --verbose                      Show compile messages verbose mode
+  -s, --sdk                          Build SDK ==> do_populate_sdk
+  -b, --buildfile  <.bb recipe>      Execute tasks from a specific .bb recipe directly.
+				     WARNING: Does not handle any dependencies from other recipes.
+
+EXAMPLES:
+
+Build the project:
+  $ petalinux-build
+  the bootable images are in <PROJECT>/images/linux/.
+
+Build SDK :
+  $ petalinux-build --sdk | -s
+  the equivalent bitbake task is do_populate_sdk,
+  built sdk is deployed at <PROJECT>/images/linux/sdk.sh
+
+Build kernel only:
+  $ petalinux-build -c kernel
+
+Compile kernel forcefully:
+  $ petalinux-build -c kernel -x compile -f
+
+Deploy kernel forcefully:
+  $ petalinux-build -c kernel -x deploy -f
+
+Build kernel and update the bootable images:
+  $ petalinux-build -c kernel
+  $ petalinux-build -x package
+
+Build rootfs only:
+  $ petalinux-build -c rootfs
+
+Build myapp of rootfs only:
+  $ petalinux-build -c myapp
+
+List all rootfs sub-components:
+  $ petalinux-build -c rootfs -h
+
+Clean up u-boot and build again:
+  $ petalinux-build -c u-boot -x distclean
+  ## above command will remove tmp files and sstate cache of u-boot.
+  $ petalinux-build -c u-boot
+
+Build device-tree ignoring dependencies:
+  $ petalinux-build -b device-tree
+
+Compile u-boot ignoring dependencies:
+  $ petalinux-build -b u-boot-xlnx_2018.1 -x do_compile
+
+Clean up the project build and build again:
+  $ petalinux-build -x distclean
+  ## above command will remove tmp files and sstate cache files.
+  $ petalinux-build
+
+Clean up the project build and the generated bootable images:
+  $ petalinux-build -x mrproper
+  ## above command will remove tmp files, <PROJECT>/images/,  <PROJECT>/build/  and <PROJECT>/components/plnx_workspace/ directories
+
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build -c wpa-supplicant
+[INFO] building wpa-supplicant
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake wpa-supplicant
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3985 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2900 .bb files complete (2896 cached, 4 parsed). 3987 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+Initialising tasks: 100% |#####################################################| Time: 0:00:01
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:01
+Sstate summary: Wanted 128 Found 42 Missed 172 Current 546 (32% match, 87% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 2077 tasks of which 2067 didn't need to be rerun and all succeeded.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built wpa-supplicant
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3985 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2900 .bb files complete (2897 cached, 3 parsed). 3987 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+WARNING: /tools/Xilinx/PetaLinux/2019.2/components/yocto/source/aarch64/layers/meta-xilinx/meta-xilinx-bsp/recipes-kernel/linux/linux-xlnx_2019.2.bb.do_compile is tainted from a forced run
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:02
+Sstate summary: Wanted 120 Found 18 Missed 204 Current 816 (15% match, 89% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 3362 tasks of which 3354 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3985 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2900 .bb files complete (2896 cached, 4 parsed). 3987 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+WARNING: /tools/Xilinx/PetaLinux/2019.2/components/yocto/source/aarch64/layers/meta-xilinx/meta-xilinx-bsp/recipes-kernel/linux/linux-xlnx_2019.2.bb.do_compile is tainted from a forced run
+Initialising tasks: 100% |#####################################################| Time: 0:00:02
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:02
+Sstate summary: Wanted 126 Found 18 Missed 216 Current 810 (14% match, 88% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 3362 tasks of which 3333 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-config -c rootfs
+[INFO] sourcing bitbake
+[INFO] generating plnxtool conf
+[INFO] generating meta-plnx-generated layer
+[INFO] generating user layers
+[INFO] generating workspace directory
+[INFO] generating machine configuration
+[INFO] configuring: rootfs
+[INFO] generating kconfig for Rootfs
+[INFO] menuconfig rootfs
+configuration written to /home/parallels/ultra96v2_0/ultra96v2_os1/project-spec/configs/rootfs_config
+
+*** End of the configuration.
+*** Execute 'make' to start the build or try 'make help'.
+
+[INFO] generating petalinux-user-image.bb
+[INFO] successfully configured rootfs
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3985 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2900 .bb files complete (2896 cached, 4 parsed). 3987 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+ERROR: Nothing RPROVIDES 'ultra96-ap-setup' (but /home/parallels/ultra96v2_0/ultra96v2_os1/project-spec/meta-plnx-generated/recipes-core/images/petalinux-user-image.bb RDEPENDS on or otherwise requires it)
+ultra96-ap-setup was skipped: incompatible with machine plnx-zynqmp (not in COMPATIBLE_MACHINE)
+NOTE: Runtime target 'ultra96-ap-setup' is unbuildable, removing...
+Missing or unbuildable dependency chain was: ['ultra96-ap-setup']
+ERROR: Required build target 'petalinux-user-image' has no buildable providers.
+Missing or unbuildable dependency chain was: ['petalinux-user-image', 'ultra96-ap-setup']
+
+Summary: There were 2 ERROR messages shown, returning a non-zero exit code.
+ERROR: Failed to build project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-config -c rootfs
+[INFO] sourcing bitbake
+[INFO] generating plnxtool conf
+[INFO] generating meta-plnx-generated layer
+[INFO] generating user layers
+[INFO] generating workspace directory
+[INFO] generating machine configuration
+[INFO] configuring: rootfs
+[INFO] generating kconfig for Rootfs
+[INFO] menuconfig rootfs
+configuration written to /home/parallels/ultra96v2_0/ultra96v2_os1/project-spec/configs/rootfs_config
+
+*** End of the configuration.
+*** Execute 'make' to start the build or try 'make help'.
+
+[INFO] generating petalinux-user-image.bb
+[INFO] successfully configured rootfs
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ petalinux-build
+[INFO] building project
+[INFO] sourcing bitbake
+[INFO] generating user layers
+[INFO] generating workspace directory
+INFO: bitbake petalinux-user-image
+Loading cache: 100% |##########################################################| Time: 0:00:00
+Loaded 3985 entries from dependency cache.
+Parsing recipes: 100% |########################################################| Time: 0:00:04
+Parsing of 2900 .bb files complete (2896 cached, 4 parsed). 3987 targets, 155 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+WARNING: /tools/Xilinx/PetaLinux/2019.2/components/yocto/source/aarch64/layers/meta-xilinx/meta-xilinx-bsp/recipes-kernel/linux/linux-xlnx_2019.2.bb.do_compile is tainted from a forced run
+Initialising tasks: 100% |#####################################################| Time: 0:00:08
+Checking sstate mirror object availability: 100% |#############################| Time: 0:00:23
+Sstate summary: Wanted 1505 Found 1083 Missed 844 Current 854 (71% match, 82% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Tasks Summary: Attempted 7389 tasks of which 6351 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+INFO: Copying Images from deploy to images
+NOTE: copy to TFTP-boot directory is not enabled !!
+[INFO] successfully built project
+parallels@parallels-Parallels-Virtual-Platform:~/ultra96v2_0/ultra96v2_os1$ 
+
+
+
+

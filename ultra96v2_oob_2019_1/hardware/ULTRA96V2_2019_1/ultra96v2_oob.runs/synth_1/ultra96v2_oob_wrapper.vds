@@ -1,0 +1,756 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec 20 10:06:42 2019
+# Process ID: 28306
+# Current directory: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1
+# Command line: vivado -log ultra96v2_oob_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_oob_wrapper.tcl
+# Log file: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/ultra96v2_oob_wrapper.vds
+# Journal file: /home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ultra96v2_oob_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/training/git/avnet/hdl/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1432.469 ; gain = 0.000 ; free physical = 5518 ; free virtual = 15485
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1432.469 ; gain = 0.000 ; free physical = 5456 ; free virtual = 15455
+Command: synth_design -top ultra96v2_oob_wrapper -part xczu3eg-sbva484-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28365 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2202.496 ; gain = 0.000 ; free physical = 4690 ; free virtual = 14691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_wrapper' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/hdl/ultra96v2_oob_wrapper.vhd:42]
+INFO: [Synth 8-3491] module 'ultra96v2_oob' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:6673' bound to instance 'ultra96v2_oob_i' of component 'ultra96v2_oob' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/hdl/ultra96v2_oob_wrapper.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:6705]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_PWM_w_Int_0_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_PWM_w_Int_0_0_stub.vhdl:5' bound to instance 'PWM_w_Int_0' of component 'ultra96v2_oob_PWM_w_Int_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:7550]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_PWM_w_Int_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_PWM_w_Int_0_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_PWM_w_Int_1_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_PWM_w_Int_1_0_stub.vhdl:5' bound to instance 'PWM_w_Int_1' of component 'ultra96v2_oob_PWM_w_Int_1_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:7578]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_PWM_w_Int_1_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_PWM_w_Int_1_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_axi_bram_ctrl_0_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'ultra96v2_oob_axi_bram_ctrl_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:7606]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_axi_bram_ctrl_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_bram_ctrl_0_0_stub.vhdl:62]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_blk_mem_gen_0_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0_bram' of component 'ultra96v2_oob_blk_mem_gen_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:7660]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_blk_mem_gen_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_blk_mem_gen_0_0_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_axi_gpio_0_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'ultra96v2_oob_axi_gpio_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:7681]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_axi_gpio_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_axi_gpio_1_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_gpio_1_0_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'ultra96v2_oob_axi_gpio_1_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:7705]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_axi_gpio_1_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_gpio_1_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_axi_gpio_2_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_gpio_2_0_stub.vhdl:5' bound to instance 'axi_gpio_2' of component 'ultra96v2_oob_axi_gpio_2_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:7728]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_axi_gpio_2_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_gpio_2_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_axi_uart16550_0_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_uart16550_0_0_stub.vhdl:5' bound to instance 'axi_uart16550_0' of component 'ultra96v2_oob_axi_uart16550_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:7752]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_axi_uart16550_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_uart16550_0_0_stub.vhdl:46]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_axi_uart16550_1_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_uart16550_1_0_stub.vhdl:5' bound to instance 'axi_uart16550_1' of component 'ultra96v2_oob_axi_uart16550_1_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:7790]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_axi_uart16550_1_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_axi_uart16550_1_0_stub.vhdl:46]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_axi_interconnect_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:4689]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_FHWKGJ' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_FHWKGJ' (1#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1BWODHJ' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:270]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_ds_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_0_stub.vhdl:5' bound to instance 'auto_ds' of component 'ultra96v2_oob_auto_ds_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:565]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_ds_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_0_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_pc_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'ultra96v2_oob_auto_pc_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:644]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_pc_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_0_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1BWODHJ' (2#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:270]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1OKJ796' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:773]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_ds_1' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_1_stub.vhdl:5' bound to instance 'auto_ds' of component 'ultra96v2_oob_auto_ds_1' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:1068]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_ds_1' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_1_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_pc_1' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'ultra96v2_oob_auto_pc_1' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:1147]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_pc_1' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_1_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1OKJ796' (3#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:773]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_I3QHF2' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:1276]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_ds_2' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_2_stub.vhdl:5' bound to instance 'auto_ds' of component 'ultra96v2_oob_auto_ds_2' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:1571]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_ds_2' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_2_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_pc_2' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'ultra96v2_oob_auto_pc_2' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:1650]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_pc_2' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_2_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_I3QHF2' (4#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:1276]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_FEN3SW' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:1779]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_ds_3' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_3_stub.vhdl:5' bound to instance 'auto_ds' of component 'ultra96v2_oob_auto_ds_3' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:2074]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_ds_3' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_3_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_pc_3' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'ultra96v2_oob_auto_pc_3' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:2153]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_pc_3' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_3_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_FEN3SW' (5#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:1779]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1BZMLZO' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:2282]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_ds_4' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_4_stub.vhdl:5' bound to instance 'auto_ds' of component 'ultra96v2_oob_auto_ds_4' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:2577]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_ds_4' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_4_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_pc_4' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_4_stub.vhdl:5' bound to instance 'auto_pc' of component 'ultra96v2_oob_auto_pc_4' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:2656]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_pc_4' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_4_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1BZMLZO' (6#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:2282]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_1OI61GP' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:2787]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_ds_5' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_5_stub.vhdl:5' bound to instance 'auto_ds' of component 'ultra96v2_oob_auto_ds_5' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:3084]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_ds_5' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_5_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_pc_5' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_5_stub.vhdl:5' bound to instance 'auto_pc' of component 'ultra96v2_oob_auto_pc_5' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:3163]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_pc_5' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_5_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_1OI61GP' (7#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:2787]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_I55X6L' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:3294]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_ds_6' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_6_stub.vhdl:5' bound to instance 'auto_ds' of component 'ultra96v2_oob_auto_ds_6' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:3591]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_ds_6' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_6_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_pc_6' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_6_stub.vhdl:5' bound to instance 'auto_pc' of component 'ultra96v2_oob_auto_pc_6' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:3670]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_pc_6' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_6_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_I55X6L' (8#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:3294]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_FD92UT' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:3799]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_ds_7' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_7_stub.vhdl:5' bound to instance 'auto_ds' of component 'ultra96v2_oob_auto_ds_7' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:4094]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_ds_7' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_ds_7_stub.vhdl:87]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_auto_pc_7' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_7_stub.vhdl:5' bound to instance 'auto_pc' of component 'ultra96v2_oob_auto_pc_7' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:4173]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_auto_pc_7' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_auto_pc_7_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_FD92UT' (9#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:3799]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_B4PECS' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:4324]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_B4PECS' (10#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:4324]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xbar_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'ultra96v2_oob_xbar_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:6271]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_xbar_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_xbar_0_stub.vhdl:93]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_axi_interconnect_0_0' (11#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:4689]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_proc_sys_reset_0_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_proc_sys_reset_0_0_stub.vhdl:5' bound to instance 'rst_ps8_0_100M' of component 'ultra96v2_oob_proc_sys_reset_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8067]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_proc_sys_reset_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_proc_sys_reset_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_system_management_wiz_0_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_system_management_wiz_0_0_stub.vhdl:5' bound to instance 'system_management_wiz_0' of component 'ultra96v2_oob_system_management_wiz_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8080]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_system_management_wiz_0_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xlconcat_0_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlconcat_0_0/synth/ultra96v2_oob_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'ultra96v2_oob_xlconcat_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8108]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_oob_xlconcat_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlconcat_0_0/synth/ultra96v2_oob_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 2 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 6 - type: integer 
+	Parameter NUM_PORTS bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (12#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_oob_xlconcat_0_0' (13#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlconcat_0_0/synth/ultra96v2_oob_xlconcat_0_0.v:58]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xlslice_0_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_0_0/synth/ultra96v2_oob_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'ultra96v2_oob_xlslice_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8117]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_oob_xlslice_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_0_0/synth/ultra96v2_oob_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 30 - type: integer 
+	Parameter DIN_FROM bound to: 29 - type: integer 
+	Parameter DIN_TO bound to: 28 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (14#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_oob_xlslice_0_0' (15#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_0_0/synth/ultra96v2_oob_xlslice_0_0.v:57]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xlslice_1_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_1_0/synth/ultra96v2_oob_xlslice_1_0.v:57' bound to instance 'xlslice_1' of component 'ultra96v2_oob_xlslice_1_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8122]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_oob_xlslice_1_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_1_0/synth/ultra96v2_oob_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 30 - type: integer 
+	Parameter DIN_FROM bound to: 27 - type: integer 
+	Parameter DIN_TO bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (15#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_oob_xlslice_1_0' (16#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_1_0/synth/ultra96v2_oob_xlslice_1_0.v:57]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xlslice_2_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_2_0/synth/ultra96v2_oob_xlslice_2_0.v:57' bound to instance 'xlslice_2' of component 'ultra96v2_oob_xlslice_2_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8127]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_oob_xlslice_2_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_2_0/synth/ultra96v2_oob_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 30 - type: integer 
+	Parameter DIN_FROM bound to: 19 - type: integer 
+	Parameter DIN_TO bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (16#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_oob_xlslice_2_0' (17#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_2_0/synth/ultra96v2_oob_xlslice_2_0.v:57]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xlslice_3_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_3_0/synth/ultra96v2_oob_xlslice_3_0.v:57' bound to instance 'xlslice_3' of component 'ultra96v2_oob_xlslice_3_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8132]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_oob_xlslice_3_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_3_0/synth/ultra96v2_oob_xlslice_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 30 - type: integer 
+	Parameter DIN_FROM bound to: 17 - type: integer 
+	Parameter DIN_TO bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' (17#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_oob_xlslice_3_0' (18#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_3_0/synth/ultra96v2_oob_xlslice_3_0.v:57]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xlslice_4_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_4_0/synth/ultra96v2_oob_xlslice_4_0.v:57' bound to instance 'xlslice_4' of component 'ultra96v2_oob_xlslice_4_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8137]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_oob_xlslice_4_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_4_0/synth/ultra96v2_oob_xlslice_4_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 30 - type: integer 
+	Parameter DIN_FROM bound to: 13 - type: integer 
+	Parameter DIN_TO bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' (18#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_oob_xlslice_4_0' (19#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_4_0/synth/ultra96v2_oob_xlslice_4_0.v:57]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xlslice_5_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_5_0/synth/ultra96v2_oob_xlslice_5_0.v:57' bound to instance 'xlslice_5' of component 'ultra96v2_oob_xlslice_5_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8142]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_oob_xlslice_5_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_5_0/synth/ultra96v2_oob_xlslice_5_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 30 - type: integer 
+	Parameter DIN_FROM bound to: 12 - type: integer 
+	Parameter DIN_TO bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' (19#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_oob_xlslice_5_0' (20#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_5_0/synth/ultra96v2_oob_xlslice_5_0.v:57]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xlslice_6_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_6_0/synth/ultra96v2_oob_xlslice_6_0.v:57' bound to instance 'xlslice_6' of component 'ultra96v2_oob_xlslice_6_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8147]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_oob_xlslice_6_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_6_0/synth/ultra96v2_oob_xlslice_6_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized5' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 30 - type: integer 
+	Parameter DIN_FROM bound to: 11 - type: integer 
+	Parameter DIN_TO bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized5' (20#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_oob_xlslice_6_0' (21#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_6_0/synth/ultra96v2_oob_xlslice_6_0.v:57]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xlslice_7_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_7_0/synth/ultra96v2_oob_xlslice_7_0.v:57' bound to instance 'xlslice_7' of component 'ultra96v2_oob_xlslice_7_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8152]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_oob_xlslice_7_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_7_0/synth/ultra96v2_oob_xlslice_7_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized6' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 30 - type: integer 
+	Parameter DIN_FROM bound to: 9 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized6' (21#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_oob_xlslice_7_0' (22#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_7_0/synth/ultra96v2_oob_xlslice_7_0.v:57]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xlslice_8_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_8_0/synth/ultra96v2_oob_xlslice_8_0.v:57' bound to instance 'xlslice_8' of component 'ultra96v2_oob_xlslice_8_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8157]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_oob_xlslice_8_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_8_0/synth/ultra96v2_oob_xlslice_8_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized7' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 30 - type: integer 
+	Parameter DIN_FROM bound to: 1 - type: integer 
+	Parameter DIN_TO bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized7' (22#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_oob_xlslice_8_0' (23#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_8_0/synth/ultra96v2_oob_xlslice_8_0.v:57]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_xlslice_9_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_9_0/synth/ultra96v2_oob_xlslice_9_0.v:57' bound to instance 'xlslice_9' of component 'ultra96v2_oob_xlslice_9_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8162]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_oob_xlslice_9_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_9_0/synth/ultra96v2_oob_xlslice_9_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized8' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 30 - type: integer 
+	Parameter DIN_FROM bound to: 0 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized8' (23#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_oob_xlslice_9_0' (24#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xlslice_9_0/synth/ultra96v2_oob_xlslice_9_0.v:57]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_zynq_ultra_ps_e_0_0' declared at '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_zynq_ultra_ps_e_0_0_stub.vhdl:5' bound to instance 'zynq_ultra_ps_e_0' of component 'ultra96v2_oob_zynq_ultra_ps_e_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:8167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_zynq_ultra_ps_e_0_0' [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/.Xil/Vivado-28306-ubuv1604/realtime/ultra96v2_oob_zynq_ultra_ps_e_0_0_stub.vhdl:103]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob' (25#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/synth/ultra96v2_oob.vhd:6705]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_wrapper' (26#1) [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/hdl/ultra96v2_oob_wrapper.vhd:42]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized8 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized7 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized6 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized5 has unconnected port Din[8]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2202.496 ; gain = 0.000 ; free physical = 4698 ; free virtual = 14701
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2202.496 ; gain = 0.000 ; free physical = 4699 ; free virtual = 14702
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2202.496 ; gain = 0.000 ; free physical = 4699 ; free virtual = 14702
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_zynq_ultra_ps_e_0_0/ultra96v2_oob_zynq_ultra_ps_e_0_0/ultra96v2_oob_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/zynq_ultra_ps_e_0'
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2339.078 ; gain = 11.875 ; free physical = 4588 ; free virtual = 14591
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_zynq_ultra_ps_e_0_0/ultra96v2_oob_zynq_ultra_ps_e_0_0/ultra96v2_oob_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xbar_0/ultra96v2_oob_xbar_0/ultra96v2_oob_xbar_0_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_xbar_0/ultra96v2_oob_xbar_0/ultra96v2_oob_xbar_0_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_proc_sys_reset_0_0/ultra96v2_oob_proc_sys_reset_0_0/ultra96v2_oob_proc_sys_reset_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/rst_ps8_0_100M'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_proc_sys_reset_0_0/ultra96v2_oob_proc_sys_reset_0_0/ultra96v2_oob_proc_sys_reset_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/rst_ps8_0_100M'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_bram_ctrl_0_0/ultra96v2_oob_axi_bram_ctrl_0_0/ultra96v2_oob_axi_bram_ctrl_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_bram_ctrl_0_0/ultra96v2_oob_axi_bram_ctrl_0_0/ultra96v2_oob_axi_bram_ctrl_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_blk_mem_gen_0_0/ultra96v2_oob_blk_mem_gen_0_0/ultra96v2_oob_blk_mem_gen_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_blk_mem_gen_0_0/ultra96v2_oob_blk_mem_gen_0_0/ultra96v2_oob_blk_mem_gen_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_bram_ctrl_0_bram'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_0_0/ultra96v2_oob_axi_uart16550_0_0/ultra96v2_oob_axi_uart16550_1_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_uart16550_0'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_0_0/ultra96v2_oob_axi_uart16550_0_0/ultra96v2_oob_axi_uart16550_1_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_uart16550_0'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_uart16550_1'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_uart16550_1'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_gpio_0_0/ultra96v2_oob_axi_gpio_0_0/ultra96v2_oob_axi_gpio_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_gpio_0'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_gpio_0_0/ultra96v2_oob_axi_gpio_0_0/ultra96v2_oob_axi_gpio_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_gpio_0'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_gpio_1_0/ultra96v2_oob_axi_gpio_1_0/ultra96v2_oob_axi_gpio_1_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_gpio_1'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_gpio_1_0/ultra96v2_oob_axi_gpio_1_0/ultra96v2_oob_axi_gpio_1_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_gpio_1'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_gpio_2_0/ultra96v2_oob_axi_gpio_2_0/ultra96v2_oob_axi_gpio_2_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_gpio_2'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_gpio_2_0/ultra96v2_oob_axi_gpio_2_0/ultra96v2_oob_axi_gpio_2_0_in_context.xdc] for cell 'ultra96v2_oob_i/axi_gpio_2'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_PWM_w_Int_0_0/ultra96v2_oob_PWM_w_Int_0_0/ultra96v2_oob_PWM_w_Int_1_0_in_context.xdc] for cell 'ultra96v2_oob_i/PWM_w_Int_0'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_PWM_w_Int_0_0/ultra96v2_oob_PWM_w_Int_0_0/ultra96v2_oob_PWM_w_Int_1_0_in_context.xdc] for cell 'ultra96v2_oob_i/PWM_w_Int_0'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_PWM_w_Int_1_0/ultra96v2_oob_PWM_w_Int_1_0/ultra96v2_oob_PWM_w_Int_1_0_in_context.xdc] for cell 'ultra96v2_oob_i/PWM_w_Int_1'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_PWM_w_Int_1_0/ultra96v2_oob_PWM_w_Int_1_0/ultra96v2_oob_PWM_w_Int_1_0_in_context.xdc] for cell 'ultra96v2_oob_i/PWM_w_Int_1'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/system_management_wiz_0'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_in_context.xdc] for cell 'ultra96v2_oob_i/system_management_wiz_0'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_0/ultra96v2_oob_auto_ds_0/ultra96v2_oob_auto_ds_0_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m01_couplers/auto_ds'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_0/ultra96v2_oob_auto_ds_0/ultra96v2_oob_auto_ds_0_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m01_couplers/auto_ds'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_0/ultra96v2_oob_auto_pc_0/ultra96v2_oob_auto_pc_7_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_0/ultra96v2_oob_auto_pc_0/ultra96v2_oob_auto_pc_7_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m01_couplers/auto_pc'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_1/ultra96v2_oob_auto_ds_1/ultra96v2_oob_auto_ds_0_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m02_couplers/auto_ds'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_1/ultra96v2_oob_auto_ds_1/ultra96v2_oob_auto_ds_0_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m02_couplers/auto_ds'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_1/ultra96v2_oob_auto_pc_1/ultra96v2_oob_auto_pc_7_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m02_couplers/auto_pc'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_1/ultra96v2_oob_auto_pc_1/ultra96v2_oob_auto_pc_7_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m02_couplers/auto_pc'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_2/ultra96v2_oob_auto_ds_2/ultra96v2_oob_auto_ds_5_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m03_couplers/auto_ds'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_2/ultra96v2_oob_auto_ds_2/ultra96v2_oob_auto_ds_5_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m03_couplers/auto_ds'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_2/ultra96v2_oob_auto_pc_2/ultra96v2_oob_auto_pc_2_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m03_couplers/auto_pc'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_2/ultra96v2_oob_auto_pc_2/ultra96v2_oob_auto_pc_2_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m03_couplers/auto_pc'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_3/ultra96v2_oob_auto_ds_3/ultra96v2_oob_auto_ds_5_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m04_couplers/auto_ds'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_3/ultra96v2_oob_auto_ds_3/ultra96v2_oob_auto_ds_5_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m04_couplers/auto_ds'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_3/ultra96v2_oob_auto_pc_3/ultra96v2_oob_auto_pc_2_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m04_couplers/auto_pc'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_3/ultra96v2_oob_auto_pc_3/ultra96v2_oob_auto_pc_2_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m04_couplers/auto_pc'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_4/ultra96v2_oob_auto_ds_4/ultra96v2_oob_auto_ds_5_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m05_couplers/auto_ds'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_4/ultra96v2_oob_auto_ds_4/ultra96v2_oob_auto_ds_5_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m05_couplers/auto_ds'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_4/ultra96v2_oob_auto_pc_4/ultra96v2_oob_auto_pc_2_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m05_couplers/auto_pc'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_4/ultra96v2_oob_auto_pc_4/ultra96v2_oob_auto_pc_2_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m05_couplers/auto_pc'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_5/ultra96v2_oob_auto_ds_5/ultra96v2_oob_auto_ds_5_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m06_couplers/auto_ds'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_5/ultra96v2_oob_auto_ds_5/ultra96v2_oob_auto_ds_5_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m06_couplers/auto_ds'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_5/ultra96v2_oob_auto_pc_5/ultra96v2_oob_auto_pc_2_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m06_couplers/auto_pc'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_5/ultra96v2_oob_auto_pc_5/ultra96v2_oob_auto_pc_2_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m06_couplers/auto_pc'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_6/ultra96v2_oob_auto_ds_6/ultra96v2_oob_auto_ds_5_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m07_couplers/auto_ds'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_6/ultra96v2_oob_auto_ds_6/ultra96v2_oob_auto_ds_5_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m07_couplers/auto_ds'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_6/ultra96v2_oob_auto_pc_6/ultra96v2_oob_auto_pc_2_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m07_couplers/auto_pc'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_6/ultra96v2_oob_auto_pc_6/ultra96v2_oob_auto_pc_2_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m07_couplers/auto_pc'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_7/ultra96v2_oob_auto_ds_7/ultra96v2_oob_auto_ds_0_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m08_couplers/auto_ds'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_ds_7/ultra96v2_oob_auto_ds_7/ultra96v2_oob_auto_ds_0_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m08_couplers/auto_ds'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_7/ultra96v2_oob_auto_pc_7/ultra96v2_oob_auto_pc_7_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m08_couplers/auto_pc'
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_auto_pc_7/ultra96v2_oob_auto_pc_7/ultra96v2_oob_auto_pc_7_in_context.xdc] for cell 'ultra96v2_oob_i/ps8_0_axi_periph/m08_couplers/auto_pc'
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/constrs_1/imports/ultra96v2_oob/ultra96v2_oob.xdc]
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/constrs_1/imports/ultra96v2_oob/ultra96v2_oob.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.srcs/constrs_1/imports/ultra96v2_oob/ultra96v2_oob.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ultra96v2_oob_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ultra96v2_oob_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2339.078 ; gain = 0.000 ; free physical = 4582 ; free virtual = 14586
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2339.078 ; gain = 0.000 ; free physical = 4582 ; free virtual = 14586
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ultra96v2_oob_i/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2345.016 ; gain = 142.520 ; free physical = 4677 ; free virtual = 14682
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2345.016 ; gain = 142.520 ; free physical = 4677 ; free virtual = 14682
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/rst_ps8_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/axi_uart16550_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/axi_uart16550_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/axi_gpio_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/axi_gpio_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/PWM_w_Int_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/PWM_w_Int_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/system_management_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/xlslice_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/xlslice_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/xlslice_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/xlslice_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/xlslice_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/xlslice_6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/xlslice_7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/xlslice_8. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/xlslice_9. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m01_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m02_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m03_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m04_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m05_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m05_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m06_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m06_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m07_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m07_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m08_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_oob_i/ps8_0_axi_periph/m08_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 2345.016 ; gain = 142.520 ; free physical = 4677 ; free virtual = 14682
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 2345.016 ; gain = 142.520 ; free physical = 4677 ; free virtual = 14683
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 2345.016 ; gain = 142.520 ; free physical = 4671 ; free virtual = 14681
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ultra96v2_oob_i/zynq_ultra_ps_e_0/pl_clk0' to pin 'ultra96v2_oob_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ultra96v2_oob_i/axi_bram_ctrl_0/bram_clk_a' to pin 'ultra96v2_oob_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ultra96v2_oob_i/axi_bram_ctrl_0/bram_clk_b' to pin 'ultra96v2_oob_i/axi_bram_ctrl_0/bbstub_bram_clk_b/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:02:45 . Memory (MB): peak = 2725.461 ; gain = 522.965 ; free physical = 4094 ; free virtual = 14104
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:02:45 . Memory (MB): peak = 2725.461 ; gain = 522.965 ; free physical = 4093 ; free virtual = 14103
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:02:45 . Memory (MB): peak = 2741.867 ; gain = 539.371 ; free physical = 4089 ; free virtual = 14100
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:02:48 . Memory (MB): peak = 2751.773 ; gain = 549.277 ; free physical = 4090 ; free virtual = 14100
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:02:48 . Memory (MB): peak = 2751.773 ; gain = 549.277 ; free physical = 4090 ; free virtual = 14100
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:02:48 . Memory (MB): peak = 2751.773 ; gain = 549.277 ; free physical = 4089 ; free virtual = 14100
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:02:48 . Memory (MB): peak = 2751.773 ; gain = 549.277 ; free physical = 4089 ; free virtual = 14099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:02:48 . Memory (MB): peak = 2751.773 ; gain = 549.277 ; free physical = 4089 ; free virtual = 14099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:02:48 . Memory (MB): peak = 2751.773 ; gain = 549.277 ; free physical = 4089 ; free virtual = 14099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------------+----------+
+|      |BlackBox name                           |Instances |
++------+----------------------------------------+----------+
+|1     |ultra96v2_oob_xbar_0                    |         1|
+|2     |ultra96v2_oob_auto_ds_0                 |         1|
+|3     |ultra96v2_oob_auto_pc_0                 |         1|
+|4     |ultra96v2_oob_auto_ds_1                 |         1|
+|5     |ultra96v2_oob_auto_pc_1                 |         1|
+|6     |ultra96v2_oob_auto_ds_2                 |         1|
+|7     |ultra96v2_oob_auto_pc_2                 |         1|
+|8     |ultra96v2_oob_auto_ds_3                 |         1|
+|9     |ultra96v2_oob_auto_pc_3                 |         1|
+|10    |ultra96v2_oob_auto_ds_4                 |         1|
+|11    |ultra96v2_oob_auto_pc_4                 |         1|
+|12    |ultra96v2_oob_auto_ds_5                 |         1|
+|13    |ultra96v2_oob_auto_pc_5                 |         1|
+|14    |ultra96v2_oob_auto_ds_6                 |         1|
+|15    |ultra96v2_oob_auto_pc_6                 |         1|
+|16    |ultra96v2_oob_auto_ds_7                 |         1|
+|17    |ultra96v2_oob_auto_pc_7                 |         1|
+|18    |ultra96v2_oob_PWM_w_Int_0_0             |         1|
+|19    |ultra96v2_oob_PWM_w_Int_1_0             |         1|
+|20    |ultra96v2_oob_axi_bram_ctrl_0_0         |         1|
+|21    |ultra96v2_oob_blk_mem_gen_0_0           |         1|
+|22    |ultra96v2_oob_axi_gpio_0_0              |         1|
+|23    |ultra96v2_oob_axi_gpio_1_0              |         1|
+|24    |ultra96v2_oob_axi_gpio_2_0              |         1|
+|25    |ultra96v2_oob_axi_uart16550_0_0         |         1|
+|26    |ultra96v2_oob_axi_uart16550_1_0         |         1|
+|27    |ultra96v2_oob_proc_sys_reset_0_0        |         1|
+|28    |ultra96v2_oob_system_management_wiz_0_0 |         1|
+|29    |ultra96v2_oob_zynq_ultra_ps_e_0_0       |         1|
++------+----------------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------------------+------+
+|      |Cell                                            |Count |
++------+------------------------------------------------+------+
+|1     |ultra96v2_oob_PWM_w_Int_0_0_bbox_0              |     1|
+|2     |ultra96v2_oob_PWM_w_Int_1_0_bbox_1              |     1|
+|3     |ultra96v2_oob_auto_ds_0_bbox_9                  |     1|
+|4     |ultra96v2_oob_auto_ds_1_bbox_11                 |     1|
+|5     |ultra96v2_oob_auto_ds_2_bbox_13                 |     1|
+|6     |ultra96v2_oob_auto_ds_3_bbox_15                 |     1|
+|7     |ultra96v2_oob_auto_ds_4_bbox_17                 |     1|
+|8     |ultra96v2_oob_auto_ds_5_bbox_19                 |     1|
+|9     |ultra96v2_oob_auto_ds_6_bbox_21                 |     1|
+|10    |ultra96v2_oob_auto_ds_7_bbox_23                 |     1|
+|11    |ultra96v2_oob_auto_pc_0_bbox_10                 |     1|
+|12    |ultra96v2_oob_auto_pc_1_bbox_12                 |     1|
+|13    |ultra96v2_oob_auto_pc_2_bbox_14                 |     1|
+|14    |ultra96v2_oob_auto_pc_3_bbox_16                 |     1|
+|15    |ultra96v2_oob_auto_pc_4_bbox_18                 |     1|
+|16    |ultra96v2_oob_auto_pc_5_bbox_20                 |     1|
+|17    |ultra96v2_oob_auto_pc_6_bbox_22                 |     1|
+|18    |ultra96v2_oob_auto_pc_7_bbox_24                 |     1|
+|19    |ultra96v2_oob_axi_bram_ctrl_0_0_bbox_2          |     1|
+|20    |ultra96v2_oob_axi_gpio_0_0_bbox_4               |     1|
+|21    |ultra96v2_oob_axi_gpio_1_0_bbox_5               |     1|
+|22    |ultra96v2_oob_axi_gpio_2_0_bbox_6               |     1|
+|23    |ultra96v2_oob_axi_uart16550_0_0_bbox_7          |     1|
+|24    |ultra96v2_oob_axi_uart16550_1_0_bbox_8          |     1|
+|25    |ultra96v2_oob_blk_mem_gen_0_0_bbox_3            |     1|
+|26    |ultra96v2_oob_proc_sys_reset_0_0_bbox_26        |     1|
+|27    |ultra96v2_oob_system_management_wiz_0_0_bbox_27 |     1|
+|28    |ultra96v2_oob_xbar_0_bbox_25                    |     1|
+|29    |ultra96v2_oob_zynq_ultra_ps_e_0_0_bbox_28       |     1|
+|30    |IBUF                                            |     5|
+|31    |OBUF                                            |    40|
++------+------------------------------------------------+------+
+
+Report Instance Areas: 
++------+---------------------+-----------------------------------+------+
+|      |Instance             |Module                             |Cells |
++------+---------------------+-----------------------------------+------+
+|1     |top                  |                                   |  9188|
+|2     |  ultra96v2_oob_i    |ultra96v2_oob                      |  9143|
+|3     |    ps8_0_axi_periph |ultra96v2_oob_axi_interconnect_0_0 |  7166|
+|4     |      m01_couplers   |m01_couplers_imp_1BWODHJ           |   411|
+|5     |      m02_couplers   |m02_couplers_imp_1OKJ796           |   411|
+|6     |      m03_couplers   |m03_couplers_imp_I3QHF2            |   519|
+|7     |      m04_couplers   |m04_couplers_imp_FEN3SW            |   519|
+|8     |      m05_couplers   |m05_couplers_imp_1BZMLZO           |   519|
+|9     |      m06_couplers   |m06_couplers_imp_1OI61GP           |   519|
+|10    |      m07_couplers   |m07_couplers_imp_I55X6L            |   519|
+|11    |      m08_couplers   |m08_couplers_imp_FD92UT            |   411|
+|12    |    xlconcat_0       |ultra96v2_oob_xlconcat_0_0         |     0|
+|13    |    xlslice_0        |ultra96v2_oob_xlslice_0_0          |     0|
+|14    |    xlslice_1        |ultra96v2_oob_xlslice_1_0          |     0|
+|15    |    xlslice_2        |ultra96v2_oob_xlslice_2_0          |     0|
+|16    |    xlslice_3        |ultra96v2_oob_xlslice_3_0          |     0|
+|17    |    xlslice_4        |ultra96v2_oob_xlslice_4_0          |     0|
+|18    |    xlslice_5        |ultra96v2_oob_xlslice_5_0          |     0|
+|19    |    xlslice_6        |ultra96v2_oob_xlslice_6_0          |     0|
+|20    |    xlslice_7        |ultra96v2_oob_xlslice_7_0          |     0|
+|21    |    xlslice_8        |ultra96v2_oob_xlslice_8_0          |     0|
+|22    |    xlslice_9        |ultra96v2_oob_xlslice_9_0          |     0|
++------+---------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:02:48 . Memory (MB): peak = 2751.773 ; gain = 549.277 ; free physical = 4089 ; free virtual = 14099
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 290 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:16 ; elapsed = 00:02:26 . Memory (MB): peak = 2751.773 ; gain = 406.758 ; free physical = 4125 ; free virtual = 14136
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:02:48 . Memory (MB): peak = 2751.781 ; gain = 549.277 ; free physical = 4138 ; free virtual = 14149
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2794.461 ; gain = 0.000 ; free physical = 4067 ; free virtual = 14078
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+161 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:55 ; elapsed = 00:03:35 . Memory (MB): peak = 2794.461 ; gain = 1361.992 ; free physical = 4160 ; free virtual = 14171
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2794.461 ; gain = 0.000 ; free physical = 4160 ; free virtual = 14171
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/training/git/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2019_1/ultra96v2_oob.runs/synth_1/ultra96v2_oob_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ultra96v2_oob_wrapper_utilization_synth.rpt -pb ultra96v2_oob_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 10:10:54 2019...

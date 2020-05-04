@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="37">
+  <CompositeFile CompositeFileTopName="ultra96v2_oob" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1576784750"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1576784750"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1576784750"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1576784750"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip/ultra96v2_oob_zynq_ultra_ps_e_0_0/ultra96v2_oob_zynq_ultra_ps_e_0_0.xci" Type="IP">
+        <Instance HierarchyPath="zynq_ultra_ps_e_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xbar_0/ultra96v2_oob_xbar_0.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_axi_interconnect_0_0/ultra96v2_oob_axi_interconnect_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_proc_sys_reset_0_0/ultra96v2_oob_proc_sys_reset_0_0.xci" Type="IP">
+        <Instance HierarchyPath="rst_ps8_0_100M"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_axi_bram_ctrl_0_0/ultra96v2_oob_axi_bram_ctrl_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_bram_ctrl_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_blk_mem_gen_0_0/ultra96v2_oob_blk_mem_gen_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_bram_ctrl_0_bram"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_axi_uart16550_0_0/ultra96v2_oob_axi_uart16550_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_uart16550_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_uart16550_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_axi_gpio_0_0/ultra96v2_oob_axi_gpio_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_gpio_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_axi_gpio_1_0/ultra96v2_oob_axi_gpio_1_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_gpio_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_axi_gpio_2_0/ultra96v2_oob_axi_gpio_2_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_gpio_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_PWM_w_Int_0_0/ultra96v2_oob_PWM_w_Int_0_0.xci" Type="IP">
+        <Instance HierarchyPath="PWM_w_Int_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_PWM_w_Int_1_0/ultra96v2_oob_PWM_w_Int_1_0.xci" Type="IP">
+        <Instance HierarchyPath="PWM_w_Int_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.xci" Type="IP">
+        <Instance HierarchyPath="system_management_wiz_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xlconcat_0_0/ultra96v2_oob_xlconcat_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xlconcat_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xlslice_0_0/ultra96v2_oob_xlslice_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xlslice_1_0/ultra96v2_oob_xlslice_1_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xlslice_2_0/ultra96v2_oob_xlslice_2_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xlslice_3_0/ultra96v2_oob_xlslice_3_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xlslice_4_0/ultra96v2_oob_xlslice_4_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_4"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xlslice_5_0/ultra96v2_oob_xlslice_5_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_5"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xlslice_6_0/ultra96v2_oob_xlslice_6_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_6"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xlslice_7_0/ultra96v2_oob_xlslice_7_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_7"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xlslice_8_0/ultra96v2_oob_xlslice_8_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_8"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_xlslice_9_0/ultra96v2_oob_xlslice_9_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_9"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="synth/ultra96v2_oob.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+      </File>
+      <File Name="sim/ultra96v2_oob.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_ds_0/ultra96v2_oob_auto_ds_0.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m01_couplers/auto_ds"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_pc_0/ultra96v2_oob_auto_pc_0.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m01_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_ds_1/ultra96v2_oob_auto_ds_1.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m02_couplers/auto_ds"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_pc_1/ultra96v2_oob_auto_pc_1.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m02_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_ds_2/ultra96v2_oob_auto_ds_2.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m03_couplers/auto_ds"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_pc_2/ultra96v2_oob_auto_pc_2.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m03_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_ds_3/ultra96v2_oob_auto_ds_3.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m04_couplers/auto_ds"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_pc_3/ultra96v2_oob_auto_pc_3.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m04_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_ds_4/ultra96v2_oob_auto_ds_4.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m05_couplers/auto_ds"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_pc_4/ultra96v2_oob_auto_pc_4.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m05_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_ds_5/ultra96v2_oob_auto_ds_5.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m06_couplers/auto_ds"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_pc_5/ultra96v2_oob_auto_pc_5.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m06_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_ds_6/ultra96v2_oob_auto_ds_6.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m07_couplers/auto_ds"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_pc_6/ultra96v2_oob_auto_pc_6.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m07_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_ds_7/ultra96v2_oob_auto_ds_7.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m08_couplers/auto_ds"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ultra96v2_oob_auto_pc_7/ultra96v2_oob_auto_pc_7.xci" Type="IP">
+        <Instance HierarchyPath="ps8_0_axi_periph/m08_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ultra96v2_oob_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff/ultra96v2_oob.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff/ultra96v2_oob_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="synth/ultra96v2_oob.hwdef">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="sim/ultra96v2_oob.protoinst">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>

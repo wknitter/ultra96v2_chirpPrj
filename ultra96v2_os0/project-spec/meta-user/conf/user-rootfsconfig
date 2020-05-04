@@ -1,0 +1,38 @@
+#Note: Mention Each package in individual line
+#These packages will get added into rootfs menu entry
+
+CONFIG_gpio-demo
+CONFIG_peekpoke
+CONFIG_wilc
+CONFIG_blinky-init
+CONFIG_blinky
+CONFIG_iperf3
+CONFIG_bonnie++
+
+# hostapd - For Wi-Fi hotspot / Soft AP support
+CONFIG_hostapd
+CONFIG_hostap-conf
+CONFIG_hostap-utils
+
+# Standard C/C++ Libraries
+CONFIG_glibc
+
+# Add this for wireless support:
+CONFIG_iperf
+CONFIG_wpa-supplicant
+
+# wilc3000 Wi-Fi/BT driver firmware and utilities
+CONFIG_wilc
+CONFIG_wilc-firmware-wilc3000
+CONFIG_iw
+
+CONFIG_ultra96-misc
+
+# Bluetooth stack
+CONFIG_bluez5
+CONFIG_bluez5-obex
+CONFIG_bluez5-doc
+
+# Free audio codecs - no license restrictions
+CONFIG_libvorbis
+CONFIG_libogg

@@ -1,0 +1,10 @@
+2020-05-04T15:47:11.47546100255-15:47:11 **** Incremental Build of configuration Debug for project chirpPrj_system ****
+000-make all 
+000-Generating bif file for the system project
+000-Executing command '::scw::generate_bif -xpfm /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/ultra96v2_chirpPrj.xpfm -domains standalone_domain -bifpath /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj_system/Debug/system.bif' on XSCT
+000-sdcard_gen --xpfm /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_chirpPrj/export/ultra96v2_chirpPrj/ultra96v2_chirpPrj.xpfm --sys_config ultra96v2_chirpPrj --bif /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj_system/Debug/system.bif --bitstream /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit --elf /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/Debug/chirpPrj.elf,psu_cortexa53_0
+000-creating BOOT.BIN using /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj/_ide/bitstream/ultra96v2_wrapper.bit
+000-Running /tools/Xilinx/Vitis/2019.2/bin/bootgen -arch zynqmp -image /home/parallels/ultra96v2_0/vitis_workspace/chirpPrj_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+00255-
+15:47:17 Build Finished (took 5s.993ms)
+
